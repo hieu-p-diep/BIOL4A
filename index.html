@@ -2195,7 +2195,7 @@ setLocked((prev) => ({ ...prev, [current]: true }));
   );
 }
 
-function Exam2_MCQ_Lec05_Lec10_Labs_Quiz_Stat({ label, value, onClick, className="" }) {
+function Exam2_MCQ_Lec05_to_Lec10_Labs_Quiz_Stat({ label, value, onClick, className="" }) {
   return (
     <div onClick={onClick} className={`p-4 rounded-xl bg-indigo-50 border border-indigo-100 text-center ${onClick ? "cursor-pointer hover:bg-indigo-100" : ""} ${className}`.trim()}>
       <div className="text-2xl font-bold text-indigo-800">{value}</div>
@@ -9141,7 +9141,7 @@ function Exam4_MCQ_Lec15_Lec16_Quiz_Stat({ label, value, onClick, className="" }
 const { useState, useEffect, useMemo, useRef } = React;
 
 const QUIZZES = [
-  { key: "exam2_mcq", title: "Exam 2 – MCQ Lec05–Lec10 and Labs", Component: Exam2_MCQ_Lec05_Lec10_Labs_Quiz },
+  { key: "exam2_mcq", title: "Exam 2 – MCQ Lec05–Lec10 and Labs", Component: Exam2_MCQ_Lec05_to_Lec10_Labs_Quiz },
   { key: "exam3_fitb", title: "Exam 3 – FITB Lab15–Lab20", Component: Exam3_FITB_Lab15_Lab20_Quiz },
   { key: "exam3_mcq", title: "Exam 3 – MCQ Lec11–Lec14 and Lab15–Lab20", Component: Exam3_MCQ_Lec11_Lec14_Lab15_Lab20_Quiz },
   { key: "exam4_fitb", title: "Exam 4 – FITB Lab21–Lab22", Component: Exam4_FITB_Lab21_Lab22_Quiz },
