@@ -5029,6 +5029,176 @@ function Exam3_MCQ_Lec11_Lec14_Lab15_Lab20_Stat({ label, value, onClick, classNa
  */
 
 function Exam4_FITB_Lab21_Lab22_Quiz({ darkMode }) {  const QUESTIONS = useMemo(() => ([
+
+  // --- W12 Lecture 15 Ch12 Slides Part 1 – Exam4-style (10) ---
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "Before Mendel, many people believed in __ inheritance, where offspring were thought to be an average of their parents.", accept: ["blending", "blending inheritance"], exp: "Blending inheritance claimed traits simply mixed, which Mendel’s work disproved." },
+
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "Another incorrect pre-Mendel idea was inheritance of __ characters, where changes in parents’ bodies were passed to offspring.", accept: ["acquired", "acquired characters"], exp: "Inheritance of acquired characteristics suggested traits gained during life could be inherited." },
+
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "Gregor Mendel used __ plants as his primary model system for heredity experiments.", accept: ["pea", "peas", "pea plants"], exp: "Mendel chose pea plants because they had clear traits and were easy to cross." },
+
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "Mendel studied traits that showed simple “either–or” differences, called __ traits (for example, purple vs white flowers).", accept: ["dichotomous", "simple dichotomous"], exp: "Dichotomous traits have just two clear phenotypic forms." },
+
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "A line that, when self-crossed, always produces offspring with the same phenotype is described as __ __.", accept: ["true breeding", "true-breeding"], exp: "True-breeding lines are genetically uniform for the trait being studied." },
+
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "In Mendel’s notation, the original parental plants in a cross are called the __ generation.", accept: ["p", "p generation", "parental"], exp: "The P generation consists of the true-breeding parents." },
+
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "The offspring of the parental cross (P) make up the __ generation.", accept: ["f1", "f1 generation", "first filial"], exp: "F1 stands for “first filial” generation." },
+
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "When F1 siblings are crossed with each other, their offspring are called the __ generation.", accept: ["f2", "f2 generation", "second filial"], exp: "The F2 generation reveals how traits segregate." },
+
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "A cross that tracks inheritance of a single trait is called a __ cross.", accept: ["monohybrid", "monohybrid cross"], exp: "Monohybrid crosses follow one character, such as flower color." },
+
+{ module: "W12 L15 Ch12 Part1 • Exam4-style", q: "In Mendel’s monohybrid crosses, the F2 generation often showed a __:__ ratio of dominant to recessive phenotypes.", accept: ["3:1", "3 to 1"], exp: "A 3:1 F2 ratio supported particulate rather than blending inheritance." },
+
+// --- W12 Lecture 15 Ch12 Slides Part 2 – Exam4-style (10) ---
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "A __ is a heritable characteristic such as flower color or seed shape.", accept: ["trait"], exp: "Traits are observable features that can vary among individuals." },
+
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "The observable version of a trait (for example, purple flowers) is called the __.", accept: ["phenotype"], exp: "Phenotype is what you can see or measure." },
+
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "Different versions of a gene that control the same trait are called __.", accept: ["alleles"], exp: "Alleles are alternative forms of a gene at the same locus." },
+
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "The genetic makeup of an organism for a trait, such as PP, Pp, or pp, is called its __.", accept: ["genotype"], exp: "Genotype is the allele combination an individual carries." },
+
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "An individual with two identical alleles (PP or pp) is __ for that gene.", accept: ["homozygous", "a homozygote"], exp: "Homozygotes have two of the same allele." },
+
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "An individual with two different alleles (for example, Pp) is __ for that gene.", accept: ["heterozygous", "a heterozygote"], exp: "Heterozygotes carry two different alleles for a gene." },
+
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "An allele that masks the expression of another allele in a heterozygote is described as __.", accept: ["dominant"], exp: "Dominant alleles determine the phenotype in heterozygotes." },
+
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "An allele whose effect is hidden in a heterozygote is described as __.", accept: ["recessive"], exp: "Recessive alleles only show their phenotype when homozygous." },
+
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "Mendel concluded that heredity is __, meaning traits are passed as discrete particles rather than blending.", accept: ["particulate"], exp: "Particulate inheritance explains reappearance of recessive traits in F2." },
+
+{ module: "W12 L15 Ch12 Part2 • Exam4-style", q: "Mendel’s Law of Segregation states that the two alleles for a trait separate during formation of __.", accept: ["gametes"], exp: "Each gamete receives only one allele from each gene pair." },
+
+// --- W12 Lecture 15 Ch12 Slides Part 3 – Exam4-style (10) ---
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "A __ cross involves breeding an individual with a dominant phenotype to a homozygous recessive individual.", accept: ["test", "test cross"], exp: "Test crosses reveal whether the dominant-phenotype parent is homozygous or heterozygous." },
+
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "In a test cross, a 1:1 ratio of dominant to recessive offspring suggests the unknown parent is __.", accept: ["heterozygous", "a heterozygote"], exp: "Only a heterozygous parent can produce both dominant and recessive phenotypes in this cross." },
+
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "A __ __ is a grid used to predict the genotypes and phenotypes of offspring from a genetic cross.", accept: ["punnett square", "punnett"], exp: "Punnett squares help visualize allele combinations from parents." },
+
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "The probability of a chance event is a number between 0 and 1; a value of __ means the event is certain to happen.", accept: ["1", "one"], exp: "Probability 1 (100%) means an event will occur every time." },
+
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "For independent events, the probability that they all occur in a specific order is found by __ their individual probabilities.", accept: ["multiplying", "multiplication"], exp: "The multiplicative rule of probability is used for combined independent events." },
+
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "In a monohybrid cross between two heterozygotes (Pp × Pp), the expected genotype ratio in the F2 is __ : __ : __ (PP : Pp : pp).", accept: ["1:2:1", "1 2 1", "1 to 2 to 1"], exp: "One homozygous dominant, two heterozygous, and one homozygous recessive genotype." },
+
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "In Mendel’s formal test cross diagrams, the F1 plants are usually __ for the gene being tested.", accept: ["monohybrids", "heterozygous", "monohybrid"], exp: "F1 monohybrids carry one dominant and one recessive allele." },
+
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "A __ is the first diploid cell formed by fertilization of two gametes.", accept: ["zygote"], exp: "A zygote receives one haploid set of chromosomes from each parent." },
+
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "In the simple probability example with dice, the chance of rolling a 5 then a 4 is 1/6 × 1/6 = __.", accept: ["1/36", "1 over 36", "one thirty-sixth"], exp: "Multiplying independent probabilities gives the combined probability." },
+
+{ module: "W12 L15 Ch12 Part3 • Exam4-style", q: "Mendel’s First Law (Law of Segregation) explains the consistent __:__ phenotypic ratio seen in many F2 monohybrid crosses.", accept: ["3:1", "3 to 1"], exp: "Segregation of allele pairs during gamete formation yields a 3:1 dominant:recessive phenotype ratio." },
+
+// --- W12 Lecture 15 Ch12 Slides Part 4 – Exam4-style (10) ---
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "A cross that follows inheritance of two traits at once (for example seed color and seed shape) is called a __ cross.", accept: ["dihybrid", "dihybrid cross"], exp: "Dihybrid crosses analyze two genes simultaneously." },
+
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "The classic F2 phenotypic ratio from a dihybrid cross of two heterozygotes is __ : __ : __ : __.", accept: ["9:3:3:1", "9 3 3 1", "9 to 3 to 3 to 1"], exp: "This 9:3:3:1 ratio reflects independent assortment of two gene pairs." },
+
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "Mendel’s Second Law, the Law of __ __, states that allele pairs for different traits segregate independently during gamete formation.", accept: ["independent assortment", "independent segregation"], exp: "Independent assortment explains why one trait’s inheritance usually doesn’t affect another’s." },
+
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "When a heterozygote has a blended intermediate phenotype (like pink snapdragons from red × white), this is called __ __.", accept: ["incomplete dominance"], exp: "Incomplete dominance produces an intermediate phenotype rather than full dominance." },
+
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "A gene with more than two possible alleles in the population (such as multiple rabbit coat color alleles) shows __ __.", accept: ["multiple alleles"], exp: "Multiple-allele systems can create complex dominance relationships." },
+
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "When a single gene affects multiple distinct traits, this is called __.", accept: ["pleiotropy"], exp: "Pleiotropic alleles can cause many symptoms in genetic diseases." },
+
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "Genes located on the X chromosome show __-__ inheritance patterns, such as red and white eye color in Drosophila.", accept: ["sex-linked", "x-linked"], exp: "Sex-linked traits follow inheritance patterns tied to sex chromosomes." },
+
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "Some alleles are so harmful that they shorten life span or cause death; these are called __ alleles.", accept: ["lethal"], exp: "Lethal alleles can be dominant or recessive and distort expected ratios." },
+
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "In __, one gene “stands over” and masks or modifies the effect of a gene at another locus.", accept: ["epistasis"], exp: "Epistatic interactions alter phenotypic ratios from simple Mendelian expectations." },
+
+{ module: "W12 L15 Ch12 Part4 • Exam4-style", q: "Traits such as human height or skin color, which are influenced by many genes each with small effects, show __ inheritance.", accept: ["polygenic", "polygenic inheritance"], exp: "Polygenic traits vary continuously because multiple genes contribute to the phenotype." },
+
+// --- W14 Lecture 16 Ch16 Slides Part 1 – Exam4-style (10) ---
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "Each somatic cell contains the full __ of an organism, but not all genes are expressed in every cell.", accept: ["genome"], exp: "Every somatic cell has the same DNA, but only certain genes are turned on." },
+
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "Regulating gene expression saves __, because expressing every gene all the time would be extremely costly.", accept: ["energy"], exp: "Gene regulation conserves energy by avoiding unnecessary transcription and translation." },
+
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "In bacteria, transcription and translation occur simultaneously in the __.", accept: ["cytoplasm"], exp: "Prokaryotes lack a nucleus, so ribosomes can translate mRNA as it is transcribed." },
+
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "In prokaryotes, most gene regulation occurs at the __ level.", accept: ["transcriptional", "transcription"], exp: "Bacteria mainly control whether genes are transcribed into mRNA." },
+
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "In eukaryotes, transcription and translation are physically separated by the __ membrane.", accept: ["nuclear", "nuclear membrane", "nuclear envelope"], exp: "mRNA is made in the nucleus and translated in the cytoplasm." },
+
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "Prokaryotic genes with related functions are often grouped into __ that are transcribed as a single mRNA.", accept: ["operons"], exp: "Operons allow coordinated regulation of multiple genes in one pathway." },
+
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "Proteins that bind DNA and block transcription of an operon are called __.", accept: ["repressors"], exp: "Repressors shut off gene expression when bound to operator sequences." },
+
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "Proteins that bind DNA and increase transcription are called __.", accept: ["activators"], exp: "Activators help recruit or stabilize RNA polymerase at promoters." },
+
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "Small molecules that can either activate or repress transcription depending on conditions are called __.", accept: ["inducers"], exp: "Inducers regulate operons by interacting with repressors or activators." },
+
+{ module: "W14 L16 Ch16 Part1 • Exam4-style", q: "The trp operon in E. coli encodes enzymes needed to synthesize the amino acid __.", accept: ["tryptophan", "trp"], exp: "When tryptophan is abundant, the trp operon is turned off to avoid unnecessary synthesis." },
+
+// --- W14 Lecture 16 Ch16 Slides Part 2 – Exam4-style (10) ---
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "When glucose is low, E. coli cells increase levels of the small molecule __, which binds CAP to help activate certain operons.", accept: ["camp", "cyclic amp"], exp: "cAMP–CAP complexes act as positive regulators of catabolic operons like lac." },
+
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "The CAP–__ complex binds near the promoter and helps stabilize RNA polymerase, increasing transcription.", accept: ["camp", "cyclic amp"], exp: "cAMP binding allows CAP to bind DNA and enhance transcription when glucose is scarce." },
+
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "The lac operon is an example of an __ operon that is usually off but can be turned on in the presence of lactose.", accept: ["inducible"], exp: "Inducible operons are activated when their specific substrate is available." },
+
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "In the lac operon, the __ protein binds the operator and blocks transcription when lactose is absent.", accept: ["repressor", "lac repressor"], exp: "Lac repressor prevents RNA polymerase from transcribing lac genes without lactose." },
+
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "In eukaryotes, the first level of gene regulation involves controlling how tightly DNA is packaged, known as __ regulation.", accept: ["epigenetic"], exp: "Epigenetic regulation alters chromatin structure without changing nucleotide sequence." },
+
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "DNA is wrapped around proteins called __ to form nucleosomes.", accept: ["histones"], exp: "Histone proteins help compact DNA into chromatin." },
+
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "Short chemical groups such as methyl or acetyl groups added to DNA or histones serve as __ that signal whether chromatin should be open or closed.", accept: ["tags", "epigenetic tags"], exp: "These reversible tags influence gene accessibility and expression." },
+
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "When nucleosomes are spaced very close together, transcription factors cannot bind and gene expression is effectively turned __.", accept: ["off"], exp: "Tightly packed chromatin (heterochromatin) is transcriptionally silent." },
+
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "When nucleosomes are spaced farther apart and DNA is exposed, transcription factors can bind and gene expression can be turned __.", accept: ["on"], exp: "Loosely packed chromatin (euchromatin) is associated with active genes." },
+
+{ module: "W14 L16 Ch16 Part2 • Exam4-style", q: "Epigenetic changes alter gene expression without changing the underlying __ sequence.", accept: ["nucleotide", "dna"], exp: "Epigenetic regulation acts “around genetics” rather than mutating the DNA itself." },
+
+// --- W14 Lecture 16 Ch16 Slides Part 3 – Exam4-style (10) ---
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "In eukaryotes, transcription of protein-coding genes uses RNA polymerase __.", accept: ["ii", "2", "rna polymerase ii"], exp: "RNA polymerase II synthesizes mRNA in eukaryotic cells." },
+
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "Transcription factors that bind the core promoter and help RNA polymerase bind are called __ transcription factors.", accept: ["general", "basal"], exp: "General transcription factors are required for transcription of most eukaryotic genes." },
+
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "Transcription factors that bind outside the core promoter and enhance or repress transcription are called __ transcription factors.", accept: ["specific"], exp: "Specific transcription factors regulate particular sets of genes." },
+
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "A common promoter element in many eukaryotic genes is the __ box with consensus sequence 5'-TATAAA-3'.", accept: ["tata"], exp: "The TATA box is an A/T-rich sequence just upstream of the start site." },
+
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "The transcription factor complex that binds the TATA box and helps recruit other factors is called __.", accept: ["tfiid"], exp: "TFIID contains the TATA-binding protein (TBP) that recognizes the TATA box." },
+
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "DNA sequences near the promoter that bind additional transcription factors are called promoter-__ elements.", accept: ["proximal"], exp: "Promoter-proximal elements are cis-acting regulatory sites near the core promoter." },
+
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "Distal regulatory DNA sequences that greatly increase transcription when bound by activators are called __.", accept: ["enhancers"], exp: "Enhancers promote high levels of transcription from specific genes." },
+
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "The short DNA sequences within enhancers that bind individual activator proteins are called distal control __.", accept: ["elements"], exp: "Different genes can share a promoter but use different distal control elements." },
+
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "A __-bending protein brings distal enhancers into contact with the promoter and transcription machinery.", accept: ["dna"], exp: "DNA bending allows protein complexes at enhancers to interact with the promoter." },
+
+{ module: "W14 L16 Ch16 Part3 • Exam4-style", q: "Different cell types (like liver vs eye) can express different genes because they use different combinations of __ transcription factors and enhancers.", accept: ["specific", "cell-type specific"], exp: "Cell-type specific transcription factors create characteristic gene expression profiles." },
+
+// --- W14 Lecture 16 Ch16 Slides Part 4 – Exam4-style (10) ---
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "In eukaryotes, pre-mRNA must be processed into mature mRNA; this post-__ modification step can be regulated.", accept: ["transcriptional"], exp: "Post-transcriptional processing includes capping, splicing, and polyadenylation." },
+
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "Removing introns and joining exons in different combinations to produce multiple proteins from one gene is called __ splicing.", accept: ["alternative"], exp: "Alternative splicing increases protein diversity without adding new genes." },
+
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "The protein-coding region of mRNA is flanked by 5' and 3' untranslated regions, abbreviated __.", accept: ["utrs", "untranslated regions"], exp: "5' and 3' UTRs help control mRNA stability and translation." },
+
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "RNA-binding proteins that associate with UTRs can increase or decrease mRNA __ in the cytoplasm.", accept: ["stability", "lifetime"], exp: "Changing mRNA stability changes how long a transcript can be translated." },
+
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "A modified guanosine added to the 5' end of eukaryotic mRNA, called the 5' __, helps prevent degradation.", accept: ["cap", "5' cap", "five prime cap"], exp: "The 5' cap also helps ribosomes recognize the mRNA." },
+
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "A string of adenine nucleotides added to the 3' end of mRNA is known as the __-__ tail.", accept: ["poly-a", "poly a"], exp: "The poly-A tail enhances mRNA stability and export from the nucleus." },
+
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "Short ~21–24 nt RNA molecules that guide RISC to complementary mRNAs for silencing are called __.", accept: ["micrornas", "mirnas", "micro rnas"], exp: "miRNAs help regulate gene expression by degrading or blocking translation of target mRNAs." },
+
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "The ribonucleoprotein complex that uses miRNAs to bind and degrade target mRNAs is called the RNA-induced __ complex (RISC).", accept: ["silencing"], exp: "The RNA-induced silencing complex is central to RNA interference." },
+
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "Translation initiation in eukaryotes requires the factor eIF-2; when eIF-2 is __, it cannot bind GTP and translation is blocked.", accept: ["phosphorylated"], exp: "Phosphorylation of eIF-2 is a key control point for global translation rates." },
+
+{ module: "W14 L16 Ch16 Part4 • Exam4-style", q: "Proteins tagged with __ are targeted to the proteasome for degradation, helping regulate protein levels.", accept: ["ubiquitin"], exp: "Ubiquitin tags mark proteins for controlled breakdown and turnover." },  
+  
+  
 { module: "W09 L17 DNA & Chromosomes • Exam2-style", q: "DNA belongs to the class of macromolecules called __.", accept: ["nucleic acids", "nucleic acid"], exp: "DNA is a nucleic acid composed of nucleotides. " },
 { module: "W09 L17 DNA & Chromosomes • Exam2-style", q: "The monomer of DNA is a __ consisting of phosphate, deoxyribose, and a nitrogenous base.", accept: ["nucleotide"], exp: "A nucleotide = phosphate + deoxyribose sugar + base." },
 { module: "W09 L17 DNA & Chromosomes • Exam2-style", q: "The four bases in DNA are __, __, __, and __.", accept: ["adenine thymine cytosine guanine", "a t c g", "adenine, thymine, cytosine, guanine"], exp: "A,T,C,G are the four DNA bases." },
