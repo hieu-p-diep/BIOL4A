@@ -5029,484 +5029,101 @@ function Exam3_MCQ_Lec11_Lec14_Lab15_Lab20_Stat({ label, value, onClick, classNa
  */
 
 function Exam4_FITB_Lab21_Lab22_Quiz({ darkMode }) {  const QUESTIONS = useMemo(() => ([
-      // --- New 80 FITB drill questions (Exam 4 – new module) ---
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "In Mendel’s pea plant experiments, the original true-breeding parents are called the __ generation.", 
-      accept: ["p", "p generation", "parental", "parental generation"], 
-      exp: "Mendel called the first true-breeding parents the P (parental) generation." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "The F1 generation is also called the __ generation.", 
-      accept: ["first filial", "f1", "first filial generation"], 
-      exp: "F1 stands for the first filial generation, the offspring of the P generation." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "The F2 generation is also called the __ generation.", 
-      accept: ["second filial", "f2", "second filial generation"], 
-      exp: "F2 stands for the second filial generation, offspring of the F1." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "Observable features such as purple or white flowers are called an organism’s __.", 
-      accept: ["phenotype", "phenotypes"], 
-      exp: "The phenotype is the observable trait or appearance." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "The genetic makeup that underlies an organism’s traits is its __.", 
-      accept: ["genotype", "genotypes"], 
-      exp: "Genotype refers to the alleles an individual carries." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "Having two identical alleles for a gene (such as TT or tt) is called being __.", 
-      accept: ["homozygous", "homozygote"], 
-      exp: "A homozygous individual has two of the same allele." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "Having two different alleles for a gene (such as Tt) is called being __.", 
-      accept: ["heterozygous", "heterozygote"], 
-      exp: "A heterozygous individual has two different alleles." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "In a heterozygote, the allele that determines the phenotype is called the __ allele.", 
-      accept: ["dominant"], 
-      exp: "The dominant allele masks the recessive allele in the heterozygote." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "In a heterozygote, the allele whose effect is masked in the phenotype is called the __ allele.", 
-      accept: ["recessive"], 
-      exp: "The recessive allele is not expressed in the heterozygote’s phenotype." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A cross that follows inheritance of a single character, such as flower color, is called a __ cross.", 
-      accept: ["monohybrid", "monohybrid cross"], 
-      exp: "A monohybrid cross examines a single gene/trait." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A cross between two individuals that are both heterozygous for the same gene (e.g., Yy × Yy) is a classic __ cross.", 
-      accept: ["monohybrid", "monohybrid cross"], 
-      exp: "Yy × Yy is the classic monohybrid cross analyzed by Mendel." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "Mendel’s First Law, which states that allele pairs separate into different gametes, is the law of __.", 
-      accept: ["segregation", "law of segregation"], 
-      exp: "The law of segregation describes separation of allele pairs during gamete formation." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "Mendel’s Second Law, which states that allele pairs for different genes assort independently, is the law of __.", 
-      accept: ["independent assortment", "law of independent assortment"], 
-      exp: "Different gene pairs assort independently into gametes, assuming they are on different chromosomes." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "Genes located on the same chromosome that tend to be inherited together are described as being __.", 
-      accept: ["linked", "in linkage", "genetically linked"], 
-      exp: "Linked genes tend to be inherited together because they are on the same chromosome." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A cross between an individual with a dominant phenotype but unknown genotype and a homozygous recessive individual is called a __.", 
-      accept: ["testcross", "test cross"], 
-      exp: "A testcross reveals whether the dominant-phenotype individual is homozygous or heterozygous." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A cross that tracks inheritance of two characters at the same time is called a __ cross.", 
-      accept: ["dihybrid", "dihybrid cross"], 
-      exp: "A dihybrid cross follows two genes (for example, seed color and seed shape)." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "For a monohybrid cross with complete dominance, the classic F2 phenotypic ratio is __.", 
-      accept: ["3:1", "3 to 1"], 
-      exp: "Mendel observed a 3:1 dominant:recessive ratio in F2 for simple traits." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "For a dihybrid cross with independent assortment and complete dominance, the classic F2 phenotypic ratio is __.", 
-      accept: ["9:3:3:1", "9 3 3 1"], 
-      exp: "Independent assortment for two genes gives a 9:3:3:1 phenotypic ratio." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "When the heterozygote shows an intermediate phenotype between the two homozygotes, the inheritance pattern is __.", 
-      accept: ["incomplete dominance"], 
-      exp: "Incomplete dominance shows a blended or intermediate phenotype in the heterozygote." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "When both alleles in a heterozygote are fully expressed (like IAIB in ABO blood types), this pattern is called __.", 
-      accept: ["codominance"], 
-      exp: "In codominance, both alleles affect the phenotype in distinct ways." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A single gene that affects multiple phenotypic traits is said to be __.", 
-      accept: ["pleiotropic", "pleiotropy"], 
-      exp: "Pleiotropy means one gene has multiple phenotypic effects." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A trait that is influenced by many genes (such as human height) shows __ inheritance.", 
-      accept: ["polygenic", "polygenic inheritance"], 
-      exp: "Polygenic traits are controlled by many genes with small additive effects." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "ABO blood type, where IA and IB are both expressed in the phenotype, is a classic example of __.", 
-      accept: ["codominance"], 
-      exp: "Both IA and IB alleles are expressed, giving the IAIB phenotype type AB." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "Traits that are influenced by both genetic and environmental factors show __ interaction.", 
-      accept: ["gene-environment interaction", "gene environment interaction", "g×e", "g x e"], 
-      exp: "Many traits (like weight or skin color) reflect gene–environment interactions." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A lethal allele that kills individuals when homozygous but allows survival when heterozygous can produce a live offspring ratio of __ among phenotypes.", 
-      accept: ["2:1", "2 to 1"], 
-      exp: "If one genotype dies, surviving offspring may show a 2:1 ratio of the remaining phenotypes." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "The probability rule used to calculate the chance that two independent events both occur is called the __ rule.", 
-      accept: ["product rule", "multiplication rule", "rule of multiplication"], 
-      exp: "The product (multiplication) rule is used for independent events happening together." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "The probability rule used for the chance that one OR another of several mutually exclusive events occurs is called the __ rule.", 
-      accept: ["sum rule", "addition rule", "rule of addition"], 
-      exp: "The sum (addition) rule is used for mutually exclusive alternative outcomes." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "Deviation between observed and expected Mendelian ratios can be formally evaluated using a __ test.", 
-      accept: ["chi-square", "chi square", "χ2"], 
-      exp: "The chi-square test compares observed counts to expected counts under a hypothesis." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "In a chi-square test, the value Σ((observed − expected)² / expected) is called the __ statistic.", 
-      accept: ["chi-square", "chi square", "χ2"], 
-      exp: "That sum is the chi-square (χ²) statistic." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "In a chi-square test, the number of categories minus one equals the __.", 
-      accept: ["degrees of freedom", "degree of freedom", "df"], 
-      exp: "Degrees of freedom (df) = number of categories − 1." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "In a pedigree, a square symbol represents a __.", 
-      accept: ["male"], 
-      exp: "By convention, males are squares in a pedigree chart." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "In a pedigree, a circle symbol represents a __.", 
-      accept: ["female"], 
-      exp: "By convention, females are circles in a pedigree chart." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A shaded symbol in a pedigree usually indicates an individual who is __ for the trait.", 
-      accept: ["affected"], 
-      exp: "Shaded symbols usually indicate affected individuals in pedigree diagrams." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "If a trait appears in every generation of a pedigree, it is likely controlled by a(n) __ allele.", 
-      accept: ["dominant", "autosomal dominant"], 
-      exp: "Dominant traits often appear in every generation and in affected parents." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "If a trait skips generations and appears in both males and females, it is often __ in its inheritance pattern.", 
-      accept: ["autosomal recessive", "recessive"], 
-      exp: "Autosomal recessive traits can skip generations when carriers are phenotypically normal." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A trait that appears mostly in males and is passed from carrier mothers to sons often shows __ inheritance.", 
-      accept: ["x-linked recessive", "sex-linked recessive", "x linked recessive"], 
-      exp: "X-linked recessive traits often affect males more frequently and pass through carrier females." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "The random fusion of haploid gametes to restore the diploid number is called __.", 
-      accept: ["fertilization", "syngamy"], 
-      exp: "Fertilization (syngamy) combines sperm and egg to form a diploid zygote." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "A diagram that lists all possible gamete combinations from a cross to predict offspring ratios is a __ square.", 
-      accept: ["punnett", "punnett square"], 
-      exp: "Punnett squares are used to visualize all possible zygote genotypes." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch12 – Mendel)", 
-      q: "In Mendel’s model, each trait is controlled by a pair of __, one from each parent.", 
-      accept: ["alleles", "allele"], 
-      exp: "Mendel reasoned that traits are determined by pairs of discrete alleles." 
-    },
+// ===== Chapter 12 — Part 1 (10) =====
+{ id:"Ch12_P1_Q8", prompt:"The allele combination an individual carries is the ______.", answer:"genotype" },
+{ id:"Ch12_P1_Q9", prompt:"An allele that masks another is called ______.", answer:"dominant" },
+{ id:"Ch12_P1_Q10", prompt:"A PP or pp plant is a ______; a Pp plant is a heterozygote.", answer:"homozygote", alts:["homozygous"] },
 
-    // --- DNA & gene expression (Ch16 – 40 new items) ---
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In eukaryotic chromosomes, DNA wrapped around histone proteins forms __.", 
-      accept: ["chromatin"], 
-      exp: "Chromatin is the DNA–protein complex that makes up chromosomes." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The monomers that make up DNA are called __.", 
-      accept: ["nucleotides", "nucleotide"], 
-      exp: "DNA is a polymer of nucleotide monomers." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The sugar found in DNA nucleotides is __.", 
-      accept: ["deoxyribose"], 
-      exp: "DNA contains the five-carbon sugar deoxyribose." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In DNA, adenine (A) base-pairs with __.", 
-      accept: ["thymine", "t"], 
-      exp: "A pairs with T in DNA by hydrogen bonding." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In DNA, cytosine (C) base-pairs with __.", 
-      accept: ["guanine", "g"], 
-      exp: "C pairs with G in DNA by hydrogen bonding." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The enzyme that unwinds the DNA double helix at the replication fork is __.", 
-      accept: ["helicase"], 
-      exp: "Helicase separates the two DNA strands at the fork." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The enzyme that synthesizes short RNA primers during DNA replication is called __.", 
-      accept: ["primase"], 
-      exp: "Primase lays down RNA primers that DNA polymerase can extend." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "Short DNA segments synthesized on the lagging strand are called __ fragments.", 
-      accept: ["okazaki", "okazaki fragments"], 
-      exp: "Okazaki fragments are joined later to build the lagging strand." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The enzyme that seals nicks in the sugar-phosphate backbone and joins Okazaki fragments is DNA __.", 
-      accept: ["ligase"], 
-      exp: "DNA ligase forms phosphodiester bonds to seal breaks in the backbone." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "New DNA strands are always synthesized in the __ to __ direction.", 
-      accept: ["5' to 3", "5' to 3'", "5 to 3", "5′ to 3′"], 
-      exp: "DNA polymerases add nucleotides to the 3′ end, so strands grow 5′→3′." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The enzyme that adds new DNA nucleotides to a growing strand is DNA __.", 
-      accept: ["polymerase"], 
-      exp: "DNA polymerase catalyzes the polymerization of deoxyribonucleotides." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The specific site on a chromosome where DNA replication begins is called the __ of replication.", 
-      accept: ["origin", "origin of replication"], 
-      exp: "Replication starts at origins of replication." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The process of copying DNA information into RNA is called __.", 
-      accept: ["transcription"], 
-      exp: "Transcription uses DNA as a template to synthesize RNA." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The enzyme that synthesizes RNA during transcription is __ polymerase.", 
-      accept: ["rna polymerase"], 
-      exp: "RNA polymerase produces RNA molecules from a DNA template." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The DNA sequence where RNA polymerase binds to start transcription is called the __.", 
-      accept: ["promoter"], 
-      exp: "Promoters are sequences that position RNA polymerase at the start site." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In eukaryotic pre-mRNA, coding regions that remain in the mature mRNA after splicing are called __.", 
-      accept: ["exons", "exon"], 
-      exp: "Exons are expressed sequences retained in the final mRNA." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "Noncoding sequences that are removed from eukaryotic pre-mRNA during processing are called __.", 
-      accept: ["introns", "intron"], 
-      exp: "Introns are intervening sequences that are spliced out." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "At the 5′ end of eukaryotic mRNA, a modified __ nucleotide is added as a cap.", 
-      accept: ["guanine", "g"], 
-      exp: "A 5′ cap containing a modified guanine protects mRNA and aids translation initiation." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "A three-nucleotide sequence in mRNA that specifies one amino acid is called a __.", 
-      accept: ["codon"], 
-      exp: "Each codon corresponds to an amino acid or a stop signal." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The codon that usually serves as the start signal for translation is __.", 
-      accept: ["aug"], 
-      exp: "AUG codes for methionine and typically serves as the start codon." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The cellular structure where translation occurs is the __.", 
-      accept: ["ribosome", "ribosomes"], 
-      exp: "Ribosomes read mRNA and assemble amino acids into polypeptides." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The RNA that carries amino acids to the ribosome is called __ RNA.", 
-      accept: ["trna", "transfer rna"], 
-      exp: "tRNA molecules deliver specific amino acids during translation." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The three-base sequence on tRNA that base-pairs with a codon is called an __.", 
-      accept: ["anticodon"], 
-      exp: "The anticodon on tRNA pairs with the complementary mRNA codon." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In eukaryotes, the first amino acid added at the start codon is usually __.", 
-      accept: ["methionine", "met"], 
-      exp: "AUG codes for methionine, which is usually the first amino acid in translation." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "A mutation that changes one amino acid to a different amino acid is called a __ mutation.", 
-      accept: ["missense"], 
-      exp: "Missense mutations result in a different amino acid in the polypeptide." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "A mutation that converts an amino-acid-coding codon into a stop codon is called a __ mutation.", 
-      accept: ["nonsense"], 
-      exp: "Nonsense mutations create premature stop codons, truncating the protein." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "Insertions or deletions that are not multiples of three nucleotides cause a __ mutation.", 
-      accept: ["frameshift", "frame shift"], 
-      exp: "Frameshift mutations alter the reading frame of the mRNA." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In bacteria, a cluster of genes and regulatory sequences that are transcribed together is called an __.", 
-      accept: ["operon"], 
-      exp: "Operons, like the lac and trp operons, coordinate regulation of related genes." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In the lac operon, the protein that binds the operator and blocks transcription when lactose is absent is the lac __.", 
-      accept: ["repressor"], 
-      exp: "The lac repressor binds the operator and prevents transcription when lactose is not present." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In the lac operon, the molecule allolactose acts as an __ by binding and inactivating the repressor.", 
-      accept: ["inducer", "allolactose"], 
-      exp: "Allolactose is the inducer that inactivates the lac repressor when lactose is present." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In the trp operon, tryptophan acts as a corepressor by activating the __ protein.", 
-      accept: ["repressor"], 
-      exp: "Tryptophan binds the trp repressor, allowing it to bind the operator and shut off transcription." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "An epigenetic modification that often silences gene expression is DNA __.", 
-      accept: ["methylation", "dna methylation"], 
-      exp: "Methylation of DNA (especially at CpG sites) is associated with reduced transcription." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "Loosely packed, transcriptionally active chromatin is called __chromatin.", 
-      accept: ["euchromatin"], 
-      exp: "Euchromatin is less condensed and associated with active gene expression." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "Densely packed, transcriptionally inactive chromatin is called __chromatin.", 
-      accept: ["heterochromatin"], 
-      exp: "Heterochromatin is highly condensed and usually transcriptionally silent." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "Short noncoding RNAs that base-pair with mRNAs to reduce their translation or promote degradation are called __ RNAs.", 
-      accept: ["micrornas", "mirnas", "micro rnas", "micro rna", "mirna"], 
-      exp: "microRNAs (miRNAs) are important post-transcriptional gene regulators." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "In eukaryotic cells, transcription occurs in the __, whereas translation occurs in the __.", 
-      accept: ["nucleus and cytoplasm", "nucleus then cytoplasm"], 
-      exp: "Transcription is nuclear; translation occurs on ribosomes in the cytoplasm." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The central dogma summarizes information flow as DNA → __ → protein.", 
-      accept: ["rna"], 
-      exp: "Genetic information is transcribed into RNA and then translated into protein." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "The backbone of each DNA strand consists of alternating sugar and __ groups.", 
-      accept: ["phosphate", "phosphates"], 
-      exp: "The sugar–phosphate backbone gives DNA structural stability." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "A segment of DNA that codes for a functional product, usually a polypeptide, is called a __.", 
-      accept: ["gene"], 
-      exp: "Genes are DNA segments that specify functional RNA or polypeptide products." 
-    },
-    { 
-      module: "Exam 4 – New FITB Drill (Ch16 – DNA & Gene Expression)", 
-      q: "A common promoter sequence in eukaryotes that helps position RNA polymerase II is called the __ box.", 
-      accept: ["tata", "tata box"], 
-      exp: "The TATA box is a conserved promoter element important for transcription initiation." 
-    }
 
+// ===== Chapter 12 — Part 2 (10) =====
+{ id:"Ch12_P2_Q1", prompt:"Mendel’s First Law states that alleles ______ into different gametes.", answer:"segregate", alts:["separate"] },
+{ id:"Ch12_P2_Q2", prompt:"A test cross uses a phenotypically dominant individual crossed to a ______ recessive.", answer:"homozygous" },
+{ id:"Ch12_P2_Q3", prompt:"A heterozygote test-crossed to rr is expected to produce a ____ : ____ phenotypic ratio.", answer:"1", alts:["1:1 ratio","1 to 1"] },
+{ id:"Ch12_P2_Q4", prompt:"In Punnett squares, the boxes represent the ______ formed at fertilization.", answer:"zygotes", alts:["offspring genotypes"] },
+{ id:"Ch12_P2_Q5", prompt:"The probability of independent events in exact order is found by ______ their probabilities.", answer:"multiplying", alts:["product","multiply"] },
+{ id:"Ch12_P2_Q6", prompt:"When order doesn’t matter and multiple distinct ways exist, you use the ______ rule of probability.", answer:"addition", alts:["additive","sum"] },
+{ id:"Ch12_P2_Q7", prompt:"A reciprocal cross reverses the sex of parents to test whether a trait is ______-linked or influenced by sex.", answer:"sex", alts:["X","sex-linked"] },
+{ id:"Ch12_P2_Q8", prompt:"The genotype of an F1 monohybrid for purple vs. white flowers is ____.", answer:"Pp" },
+{ id:"Ch12_P2_Q9", prompt:"The expected monohybrid F2 phenotypic ratio is ____.", answer:"3:1", alts:["3 to 1"] },
+{ id:"Ch12_P2_Q10", prompt:"The expected monohybrid F2 genotypic ratio is ____.", answer:"1:2:1", alts:["1 to 2 to 1"] },
+
+
+// ===== Chapter 12 — Part 3 (10) =====
+{ id:"Ch12_P3_Q1", prompt:"A formal ______ cross follows two traits at once (e.g., seed color and shape).", answer:"dihybrid" },
+{ id:"Ch12_P3_Q2", prompt:"The classic F2 dihybrid phenotypic ratio is ______.", answer:"9:3:3:1" },
+{ id:"Ch12_P3_Q3", prompt:"Mendel’s Second Law concludes that alleles for different genes assort ______.", answer:"independently", alts:["independent assortment"] },
+{ id:"Ch12_P3_Q4", prompt:"In ______ dominance, heterozygotes show an intermediate phenotype (e.g., pink snapdragons).", answer:"incomplete" },
+{ id:"Ch12_P3_Q5", prompt:"The rabbit coat-color locus shows a(n) ______ of dominance among multiple alleles (C > cch > ch > c).", answer:"hierarchy", alts:["order"] },
+{ id:"Ch12_P3_Q6", prompt:"Human ABO blood groups are an example of ______ alleles at one locus.", answer:"multiple", alts:["three alleles","codominant alleles"] },
+{ id:"Ch12_P3_Q7", prompt:"Type AB blood illustrates ______ of A and B alleles.", answer:"codominance", alts:["co-dominance"] },
+{ id:"Ch12_P3_Q8", prompt:"The most common allele in a population is called the ______ allele.", answer:"wildtype", alts:["wild-type"] },
+{ id:"Ch12_P3_Q9", prompt:"A rare, newly arisen allele in a population is termed a ______ allele.", answer:"mutant" },
+{ id:"Ch12_P3_Q10", prompt:"A ______ cross can help determine whether a dominant-phenotype individual is heterozygous.", answer:"test" },
+
+
+// ===== Chapter 12 — Part 4 (10) =====
+{ id:"Ch12_P4_Q1", prompt:"A single gene affecting multiple phenotypic traits exhibits ______.", answer:"pleiotropy" },
+{ id:"Ch12_P4_Q2", prompt:"Drosophila red/white eye color is a classic ______-linked trait.", answer:"X", alts:["sex","sex-linked","X-linked"] },
+{ id:"Ch12_P4_Q3", prompt:"In an X-linked recessive cross, carrier mothers pass the mutant allele to ____% of their sons on average.", answer:"50" },
+{ id:"Ch12_P4_Q4", prompt:"Some alleles cause lethality; crossing two Manx cats yields a ____ : ____ ratio of Manx to normal.", answer:"2:1", alts:["2 to 1"] },
+{ id:"Ch12_P4_Q5", prompt:"A trihybrid F2 probability for a specific phenotype can be computed with the ______-line (forked-line) method.", answer:"forked" },
+{ id:"Ch12_P4_Q6", prompt:"During meiosis, ______ crossover creates recombinant and non-recombinant chromatids.", answer:"chromosomal", alts:["homologous recombination","crossing over"] },
+{ id:"Ch12_P4_Q7", prompt:"In ______, one gene’s expression masks or modifies another gene’s phenotype.", answer:"epistasis" },
+{ id:"Ch12_P4_Q8", prompt:"Polygenic traits show ______ variation across a continuum (e.g., height, skin color).", answer:"quantitative", alts:["continuous"] },
+{ id:"Ch12_P4_Q9", prompt:"Traits influenced by genes and environment are called ______.", answer:"multifactorial" },
+{ id:"Ch12_P4_Q10", prompt:"Hydrangea flower color varying with soil chemistry is an example of environmental impact on ______.", answer:"phenotype" },
+
+
+// ===== Chapter 16 — Part 1 (10) =====
+{ id:"Ch16_P1_Q1", prompt:"Different somatic cell types arise primarily because of differential gene ______, not different genomes.", answer:"expression" },
+{ id:"Ch16_P1_Q2", prompt:"In bacteria, transcription and translation occur ______ in the cytoplasm.", answer:"simultaneously", alts:["coupled"] },
+{ id:"Ch16_P1_Q3", prompt:"In eukaryotes, transcription occurs in the ______ and translation in the cytoplasm.", answer:"nucleus" },
+{ id:"Ch16_P1_Q4", prompt:"Prokaryotic genes in the same pathway are often organized into ______ (e.g., trp, lac).", answer:"operons" },
+{ id:"Ch16_P1_Q5", prompt:"The trp operon is ______ by default and turned off by tryptophan-bound repressor.", answer:"on", alts:["constitutively on","repressible"] },
+{ id:"Ch16_P1_Q6", prompt:"Repressors bind the ______ region to block RNA polymerase.", answer:"operator" },
+{ id:"Ch16_P1_Q7", prompt:"When tryptophan is absent, the trp repressor cannot bind DNA and the operon is ______.", answer:"expressed", alts:["on","transcribed"] },
+{ id:"Ch16_P1_Q8", prompt:"Regulating gene expression conserves ______, space, and time.", answer:"energy" },
+{ id:"Ch16_P1_Q9", prompt:"Eukaryotic gene regulation can occur at epigenetic, transcriptional, post-transcriptional, translational, and ______ levels.", answer:"post-translational" },
+{ id:"Ch16_P1_Q10", prompt:"General model: Prokaryotes regulate mainly at the ______ level.", answer:"transcriptional" },
+
+
+// ===== Chapter 16 — Part 2 (10) =====
+{ id:"Ch16_P2_Q1", prompt:"When glucose is scarce, E. coli raises cAMP, which binds ______ to activate transcription.", answer:"CAP", alts:["catabolite activator protein"] },
+{ id:"Ch16_P2_Q2", prompt:"The lac operon is ______: it is off until an inducer (allolactose) inactivates the repressor.", answer:"inducible" },
+{ id:"Ch16_P2_Q3", prompt:"cAMP–CAP binds the ______ region to stabilize RNA polymerase at the lac promoter.", answer:"promoter" },
+{ id:"Ch16_P2_Q4", prompt:"DNA wrapped on histones forms ______ complexes that control access to genes.", answer:"nucleosome", alts:["nucleosomes"] },
+{ id:"Ch16_P2_Q5", prompt:"Adding acetyl groups to histone tails generally ______ chromatin and promotes transcription.", answer:"opens", alts:["loosens","relaxes"] },
+{ id:"Ch16_P2_Q6", prompt:"DNA methylation at promoter CpG islands is usually associated with gene ______.", answer:"silencing", alts:["repression","downregulation"] },
+{ id:"Ch16_P2_Q7", prompt:"Genes silenced in one parent’s gametes and transmitted in the silenced state are ______ genes.", answer:"imprinted" },
+{ id:"Ch16_P2_Q8", prompt:"Transcription factors are proteins that control transcription of genetic information from DNA to ____.", answer:"RNA", alts:["mRNA"] },
+{ id:"Ch16_P2_Q9", prompt:"CAP is a ______ regulator, while the lac repressor is a negative regulator.", answer:"positive", alts:["activator"] },
+{ id:"Ch16_P2_Q10", prompt:"The overall human genome has ~____ thousand genes spread across 23 chromosomes.", answer:"20", alts:["20000","20,000"] },
+
+
+// ===== Chapter 16 — Part 3 (10) =====
+{ id:"Ch16_P3_Q1", prompt:"Eukaryotic RNA polymerase II requires ______ transcription factors at the core promoter.", answer:"general", alts:["basal"] },
+{ id:"Ch16_P3_Q2", prompt:"The 5′-______ box (consensus TATAAA) is a common core promoter element.", answer:"TATA" },
+{ id:"Ch16_P3_Q3", prompt:"______ (containing TBP) binds the TATA box and helps recruit other factors.", answer:"TFIID" },
+{ id:"Ch16_P3_Q4", prompt:"Activator proteins bind distal control elements within ______ to enhance transcription.", answer:"enhancers" },
+{ id:"Ch16_P3_Q5", prompt:"DNA ______ proteins help bring enhancers into contact with the promoter.", answer:"bending", alts:["looping"] },
+{ id:"Ch16_P3_Q6", prompt:"Different cell types use distinct combinations of activators; this underlies ______-specific expression.", answer:"cell type", alts:["tissue"] },
+{ id:"Ch16_P3_Q7", prompt:"Promoter-proximal elements are cis-acting sites located ______ to the core promoter.", answer:"near", alts:["close","upstream"] },
+{ id:"Ch16_P3_Q8", prompt:"Mediator proteins transmit signals from activators to ______ polymerase II.", answer:"RNA" },
+{ id:"Ch16_P3_Q9", prompt:"Two genes may share the same promoter type but differ in their distal control elements, enabling ______ expression programs.", answer:"differential", alts:["specific"] },
+{ id:"Ch16_P3_Q10", prompt:"Specific transcription factors can act as ______ or repressors depending on context.", answer:"activators" },
+
+
+// ===== Chapter 16 — Part 4 (10) =====
+{ id:"Ch16_P4_Q1", prompt:"Pre-mRNA must be processed before translation; this ______ modification includes capping, splicing, and polyadenylation.", answer:"post-transcriptional" },
+{ id:"Ch16_P4_Q2", prompt:"Alternative ______ can generate multiple protein isoforms from one gene.", answer:"splicing" },
+{ id:"Ch16_P4_Q3", prompt:"The 5′ cap is a methylated ______ that protects mRNA from exonucleases.", answer:"GTP", alts:["guanosine triphosphate","7-methylguanosine"] },
+{ id:"Ch16_P4_Q4", prompt:"The ______ tail on mRNA also enhances stability and translation.", answer:"poly-A", alts:["polyA","polyadenylation"] },
+{ id:"Ch16_P4_Q5", prompt:"miRNAs guide the ______ complex to complementary mRNAs to repress expression.", answer:"RISC", alts:["RNA-induced silencing complex"] },
+{ id:"Ch16_P4_Q6", prompt:"Translation initiation in eukaryotes requires eIF-2 bound to ______.", answer:"GTP" },
+{ id:"Ch16_P4_Q7", prompt:"Phosphorylating eIF-2 prevents ______ binding and globally reduces translation.", answer:"GTP" },
+{ id:"Ch16_P4_Q8", prompt:"Proteins tagged with ______ are directed to the proteasome for degradation.", answer:"ubiquitin" },
+{ id:"Ch16_P4_Q9", prompt:"Genes that restrain inappropriate cell growth are called ______ suppressor genes (e.g., p53).", answer:"tumor" },
+{ id:"Ch16_P4_Q10", prompt:"Proto-oncogenes become ______ when mutations drive excessive cell-cycle activation (e.g., Myc).", answer:"oncogenes" }
 ]), []);
 
 
