@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- Tailwind CDN for quick styling -->
+    <!-- Tailwind for quick styling -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -27,6 +27,7 @@
     <div id="root"></div>
 
     <script type="text/babel">
+      // 5 FITB questions for the occluded labels 1–5
       const QUESTIONS = [
         {
           id: 1,
@@ -75,21 +76,19 @@
       }
 
       function GeneExpressionFitbQuiz() {
-        const [responses, setResponses] = React.useState(
-          () =>
-            QUESTIONS.reduce((acc, q) => {
-              acc[q.id] = "";
-              return acc;
-            }, {})
+        const [responses, setResponses] = React.useState(() =>
+          QUESTIONS.reduce((acc, q) => {
+            acc[q.id] = "";
+            return acc;
+          }, {})
         );
-
         const [checked, setChecked] = React.useState(false);
         const [results, setResults] = React.useState({});
         const [score, setScore] = React.useState(0);
 
         const handleChange = (id, value) => {
           setResponses((prev) => ({ ...prev, [id]: value }));
-          setChecked(false); // reset results if editing
+          setChecked(false); // reset feedback if editing
         };
 
         const handleCheckAnswers = () => {
@@ -120,10 +119,10 @@
               Eukaryotic Gene Expression – FITB Quiz
             </h1>
 
-            {/* Image above the questions */}
+            {/* Image above all 5 questions */}
             <div className="w-full flex justify-center mb-4">
               <img
-                src="images/eukaryote-transcription-translation.png"
+                src="images/eukaryote transcription and translation.png"
                 alt="Eukaryotic gene expression diagram with labels 1–5"
                 className="max-h-[420px] w-auto border rounded-lg shadow-sm"
               />
@@ -178,7 +177,7 @@
                           </span>
                         ) : (
                           <span className="text-rose-600">
-                            ✘ Incorrect. One acceptable answer:{' '}
+                            ✘ Incorrect. One acceptable answer:{" "}
                             <span className="font-semibold">
                               {QUESTIONS.find((x) => x.id === q.id).answers[0]}
                             </span>
