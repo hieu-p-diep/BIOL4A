@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <title>Gene Expression FITB Quiz</title>
 
-    <!-- React + Babel (same style as your other GitHub quizzes) -->
+    <!-- React + Babel -->
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- Tailwind for quick styling -->
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -35,6 +35,7 @@
           prompt:
             "Label 1: In the cytoplasm, an extracellular ______ triggers a pathway that can regulate gene expression in the nucleus.",
           answers: ["signal", "signaling molecule", "signalling molecule"],
+          imageSrc: "images/eukaryote transcription and translation.png",
         },
         {
           id: 2,
@@ -42,6 +43,7 @@
           prompt:
             "Label 2: Chromatin modification such as ______ of histones can loosen chromatin and make DNA more available for transcription.",
           answers: ["acetylation", "histone acetylation", "acetylation of histones"],
+          imageSrc: "images/eukaryote transcription and translation.png",
         },
         {
           id: 3,
@@ -49,6 +51,7 @@
           prompt:
             "Label 3: The step where DNA is used as a template to make RNA is called ________.",
           answers: ["transcription"],
+          imageSrc: "images/eukaryote transcription and translation.png",
         },
         {
           id: 4,
@@ -56,6 +59,7 @@
           prompt:
             "Label 4: The step where mRNA is used as a template to build a polypeptide is called ________.",
           answers: ["translation"],
+          imageSrc: "images/eukaryote transcription and translation.png",
         },
         {
           id: 5,
@@ -68,6 +72,7 @@
             "post-translational modification",
             "posttranslational modification",
           ],
+          imageSrc: "images/eukaryote transcription and translation.png",
         },
       ];
 
@@ -82,132 +87,165 @@
             return acc;
           }, {})
         );
-        const [checked, setChecked] = React.useState(false);
         const [results, setResults] = React.useState({});
+        const [currentIndex, setCurrentIndex] = React.useState(0);
         const [score, setScore] = React.useState(0);
+
+        const currentQuestion = QUESTIONS[currentIndex];
 
         const handleChange = (id, value) => {
           setResponses((prev) => ({ ...prev, [id]: value }));
-          setChecked(false); // reset feedback if editing
-        };
-
-        const handleCheckAnswers = () => {
-          let correctCount = 0;
-          const newResults = {};
-
-          QUESTIONS.forEach((q) => {
-            const userAnswer = normalize(responses[q.id] || "");
-            const isCorrect = q.answers.some(
-              (ans) => normalize(ans) === userAnswer
-            );
-            newResults[q.id] = isCorrect;
-            if (isCorrect) correctCount += 1;
+          // clear correctness flag for this question while editing
+          setResults((prev) => {
+            const updated = { ...prev };
+            delete updated[id];
+            return updated;
           });
-
-          setResults(newResults);
-          setScore(correctCount);
-          setChecked(true);
         };
 
-        const allFilled = QUESTIONS.every(
-          (q) => (responses[q.id] || "").trim().length > 0
-        );
+        const handleCheckCurrent = () => {
+          const q = currentQuestion;
+          const userAnswer = normalize(responses[q.id] || "");
+          const isCorrect = q.answers.some(
+            (ans) => normalize(ans) === userAnswer
+          );
+
+          setResults((prev) => ({ ...prev, [q.id]: isCorrect }));
+
+          // recompute score based on all results (including this one)
+          const newResults = { ...results, [q.id]: isCorrect };
+          let correctCount = 0;
+          QUESTIONS.forEach((question) => {
+            if (newResults[question.id]) correctCount += 1;
+          });
+          setScore(correctCount);
+        };
+
+        const goNext = () => {
+          if (currentIndex < QUESTIONS.length - 1) {
+            setCurrentIndex((i) => i + 1);
+          }
+        };
+
+        const goPrev = () => {
+          if (currentIndex > 0) {
+            setCurrentIndex((i) => i - 1);
+          }
+        };
+
+        const answerFilled =
+          (responses[currentQuestion.id] || "").trim().length > 0;
+        const isCorrect = results[currentQuestion.id];
+        const isIncorrect =
+          results.hasOwnProperty(currentQuestion.id) && !isCorrect;
 
         return (
-          <div className="max-w-4xl w-full bg-white shadow-lg rounded-xl p-6 md:p-8 space-y-6">
+          <div className="max-w-3xl w-full bg-white shadow-lg rounded-xl p-6 md:p-8 space-y-6">
             <h1 className="text-2xl md:text-3xl font-bold text-center text-slate-800 mb-4">
               Eukaryotic Gene Expression – FITB Quiz
             </h1>
 
-            {/* Image above all 5 questions */}
-            <div className="w-full flex justify-center mb-4">
+            {/* Image displayed above the current question */}
+            <div className="w-full flex justify-center mb-2">
               <img
-                src="images/eukaryote transcription and translation.png"
-                alt="Eukaryotic gene expression diagram with labels 1–5"
+                src={currentQuestion.imageSrc}
+                alt={`Diagram for label ${currentQuestion.label}`}
                 className="max-h-[420px] w-auto border rounded-lg shadow-sm"
               />
             </div>
 
-            <p className="text-sm text-slate-600 text-center mb-4">
-              Use the diagram above to answer each fill-in-the-blank question.
-              Answers are not case-sensitive.
+            <p className="text-xs md:text-sm text-slate-600 text-center mb-2">
+              Question {currentIndex + 1} of {QUESTIONS.length}
             </p>
 
-            <div className="space-y-4">
-              {QUESTIONS.map((q) => {
-                const value = responses[q.id] || "";
-                const isCorrect = results[q.id];
-                const isIncorrect =
-                  checked && value.trim().length > 0 && !isCorrect;
-
-                return (
-                  <div
-                    key={q.id}
-                    className="border rounded-lg p-4 bg-slate-50 flex flex-col gap-2"
-                  >
-                    <div className="flex items-center gap-2">
-                      <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-indigo-600 text-white text-sm font-semibold">
-                        {q.label}
+            {/* Single current question */}
+            <div className="border rounded-lg p-4 bg-slate-50 flex flex-col gap-2">
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-indigo-600 text-white text-sm font-semibold">
+                  {currentQuestion.label}
+                </span>
+                <span className="text-sm text-slate-700">
+                  (Label {currentQuestion.label} in the figure)
+                </span>
+              </div>
+              <p className="text-slate-800 text-sm md:text-base">
+                {currentQuestion.prompt}
+              </p>
+              <input
+                type="text"
+                value={responses[currentQuestion.id] || ""}
+                onChange={(e) =>
+                  handleChange(currentQuestion.id, e.target.value)
+                }
+                className={`mt-1 w-full rounded-md border px-3 py-2 text-sm md:text-base bg-white ${
+                  isCorrect
+                    ? "border-emerald-500 ring-1 ring-emerald-300"
+                    : isIncorrect
+                    ? "border-rose-500 ring-1 ring-rose-300"
+                    : "border-slate-300"
+                }`}
+                placeholder="Type your answer here"
+              />
+              {results.hasOwnProperty(currentQuestion.id) && (
+                <div className="text-xs md:text-sm mt-1">
+                  {isCorrect ? (
+                    <span className="text-emerald-600 font-semibold">
+                      ✔ Correct
+                    </span>
+                  ) : (
+                    <span className="text-rose-600">
+                      ✘ Incorrect. One acceptable answer:{" "}
+                      <span className="font-semibold">
+                        {currentQuestion.answers[0]}
                       </span>
-                      <span className="text-sm text-slate-700">
-                        (Label {q.label} in the figure)
-                      </span>
-                    </div>
-                    <p className="text-slate-800 text-sm md:text-base">
-                      {q.prompt}
-                    </p>
-                    <input
-                      type="text"
-                      value={value}
-                      onChange={(e) => handleChange(q.id, e.target.value)}
-                      className={`mt-1 w-full rounded-md border px-3 py-2 text-sm md:text-base bg-white ${
-                        isCorrect
-                          ? "border-emerald-500 ring-1 ring-emerald-300"
-                          : isIncorrect
-                          ? "border-rose-500 ring-1 ring-rose-300"
-                          : "border-slate-300"
-                      }`}
-                      placeholder="Type your answer here"
-                    />
-                    {checked && (
-                      <div className="text-xs md:text-sm">
-                        {isCorrect ? (
-                          <span className="text-emerald-600 font-semibold">
-                            ✔ Correct
-                          </span>
-                        ) : (
-                          <span className="text-rose-600">
-                            ✘ Incorrect. One acceptable answer:{" "}
-                            <span className="font-semibold">
-                              {QUESTIONS.find((x) => x.id === q.id).answers[0]}
-                            </span>
-                          </span>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
+                    </span>
+                  )}
+                </div>
+              )}
             </div>
 
+            {/* Controls */}
             <div className="flex flex-col md:flex-row items-center justify-between gap-3 mt-4">
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={goPrev}
+                  disabled={currentIndex === 0}
+                  className={`px-4 py-2 rounded-md text-sm font-semibold shadow-sm transition ${
+                    currentIndex === 0
+                      ? "bg-slate-300 text-slate-600 cursor-not-allowed"
+                      : "bg-slate-200 text-slate-800 hover:bg-slate-300"
+                  }`}
+                >
+                  Previous
+                </button>
+                <button
+                  onClick={goNext}
+                  disabled={currentIndex === QUESTIONS.length - 1}
+                  className={`px-4 py-2 rounded-md text-sm font-semibold shadow-sm transition ${
+                    currentIndex === QUESTIONS.length - 1
+                      ? "bg-slate-300 text-slate-600 cursor-not-allowed"
+                      : "bg-slate-200 text-slate-800 hover:bg-slate-300"
+                  }`}
+                >
+                  Next
+                </button>
+              </div>
+
               <button
-                onClick={handleCheckAnswers}
-                disabled={!allFilled}
+                onClick={handleCheckCurrent}
+                disabled={!answerFilled}
                 className={`px-5 py-2.5 rounded-md text-sm font-semibold text-white shadow-sm transition ${
-                  allFilled
+                  answerFilled
                     ? "bg-indigo-600 hover:bg-indigo-700"
                     : "bg-slate-400 cursor-not-allowed"
                 }`}
               >
-                Check Answers
+                Check Answer
               </button>
 
-              {checked && (
-                <div className="text-sm md:text-base font-semibold text-slate-800">
-                  Score: {score} / {QUESTIONS.length}
-                </div>
-              )}
+              <div className="text-sm md:text-base font-semibold text-slate-800">
+                Correct so far: {score} / {QUESTIONS.length}
+              </div>
             </div>
           </div>
         );
