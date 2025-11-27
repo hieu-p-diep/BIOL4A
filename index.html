@@ -5202,8 +5202,132 @@ function Exam4_FITB_Lab21_Lab22_Quiz({ darkMode }) {  const QUESTIONS = useMemo(
 
 { module: "Lec16 Gene Expression Ch16 Part4", q: "Translation initiation in eukaryotes requires the factor eIF-2; when eIF-2 is __, it cannot bind GTP and translation is blocked.", accept: ["phosphorylated"], exp: "Phosphorylation of eIF-2 is a key control point for global translation rates." },
 
-{ module: "Lec16 Gene Expression Ch16 Part4", q: "Proteins tagged with __ are targeted to the proteasome for degradation, helping regulate protein levels.", accept: ["ubiquitin"], exp: "Ubiquitin tags mark proteins for controlled breakdown and turnover." }  
+{ module: "Lec16 Gene Expression Ch16 Part4", q: "Proteins tagged with __ are targeted to the proteasome for degradation, helping regulate protein levels.", accept: ["ubiquitin"], exp: "Ubiquitin tags mark proteins for controlled breakdown and turnover." },  
   
+
+  // --- W15 Lecture 17 Ch13 Slides Part 1 ---
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "After Mendel’s work was rediscovered, biologists began searching for the physical basis of the __, the unit of heredity.", accept: ["gene", "genes"], exp: "Mendel’s conceptual hereditary ‘particles’ are now known as genes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Mendel’s “hereditary particles” were originally a __ idea; their physical nature was not yet known.", accept: ["conceptual", "theoretical", "abstract"], exp: "Mendel inferred the existence of hereditary particles conceptually from breeding experiments." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Advances in __ and staining techniques allowed scientists to visualize chromosomes.", accept: ["microscopy"], exp: "Improved microscopy and stains made threadlike chromosomes visible in cells." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Chromosomes are threadlike __ structures made of DNA and proteins that store genetic information.", accept: ["nuclear"], exp: "Chromosomes are located in the nucleus and house genetic information." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "According to the chromosomal theory of inheritance, each pair of homologous chromosomes sorts __ and independently of other pairs.", accept: ["randomly", "at random"], exp: "Homologous chromosome pairs assort randomly during meiosis." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Male and female gametes each contain __ the genetic material of the parent cell.", accept: ["half", "1/2"], exp: "Meiosis reduces the chromosome number by half in gametes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "During __, chromosome pairs migrate as discrete structures, providing a basis for Mendel’s laws.", accept: ["meiosis"], exp: "Meiosis is the specialized cell division that explains segregation and independent assortment." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Fusion of sperm and egg during __ restores the diploid chromosome number.", accept: ["fertilization"], exp: "Fertilization combines two haploid gametes to reestablish the diploid state." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Even though sperm and egg differ in size and shape, they normally carry the same number of __.", accept: ["chromosomes"], exp: "Gametes contribute equally to chromosome number in the zygote." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "The chromosomal theory of inheritance provided a physical explanation for Mendel’s conceptual laws of __.", accept: ["inheritance"], exp: "By placing genes on chromosomes, the theory links meiosis to Mendelian inheritance." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Mendel’s Law of Segregation is explained cytologically by the separation of homologous chromosomes during __ __ of meiosis I.", accept: ["anaphase i", "anaphase 1"], exp: "In anaphase I, homologous chromosomes (and their alleles) segregate to opposite poles." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Mendel’s Law of Independent Assortment is explained by the random orientation of chromosome pairs on the metaphase plate during __ __ of meiosis I.", accept: ["metaphase i", "metaphase 1"], exp: "Different homologous pairs line up independently at metaphase I, producing new combinations." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Boveri and Sutton independently showed that chromosomes occur in matched __ and __ pairs that segregate during meiosis.", accept: ["maternal", "paternal"], exp: "Their work demonstrated that chromosomes come in maternal and paternal pairs." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Eleanor Carothers provided early evidence for __ assortment of chromosomes in grasshoppers.", accept: ["independent"], exp: "Carothers observed that different chromosome pairs assort independently into gametes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Discovery of inheritance based on X and Y chromosomes showed that __ is determined by specific chromosomes.", accept: ["sex"], exp: "Sex-linked inheritance revealed that sex is controlled by the X and Y chromosomes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "T. H. Morgan used the fruit fly __ __ to investigate the chromosomal basis of inheritance.", accept: ["drosophila melanogaster", "drosophila"], exp: "Drosophila melanogaster was Morgan’s key model organism for genetics." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Morgan showed that the white-eye mutation in fruit flies is inherited along with sex because the gene is located on the __ chromosome.", accept: ["x"], exp: "The white-eye gene is X-linked, so its inheritance follows the X chromosome." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Morgan’s work on sex-linked traits provided the first strong proof that __ reside on chromosomes.", accept: ["genes"], exp: "Linking eye color to the X chromosome demonstrated that genes are on chromosomes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Genes that are located on the same chromosome and tend to be inherited together are called __ genes.", accept: ["linked"], exp: "Linked genes are physically on the same chromosome and do not assort independently." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part1", q: "Crossing over between homologous chromosomes can separate linked genes and produce __ chromatids with new allele combinations.", accept: ["recombinant", "recombinants"], exp: "Recombinant chromatids carry new combinations of linked alleles due to crossing over." },
+
+  // --- W15 Lecture 17 Ch13 Slides Part 2 ---
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "In Drosophila notation, adding a superscript __ (for example, w+) to an allele symbol indicates the wild-type version.", accept: ["plus", "+", "plus sign", "superscript plus"], exp: "A superscript + marks the wild-type allele, while the plain symbol names the mutant." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "In many genetic crosses, mutant alleles are named after their __ phenotype, such as white eyes or vestigial wings.", accept: ["mutant", "abnormal", "non-wild-type"], exp: "Mutant alleles often receive names describing the altered phenotype they produce." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Genes on the same chromosome that are inherited together more often than expected by chance are described as __.", accept: ["linked"], exp: "Linkage refers to genes located on the same chromosome that tend to co-segregate." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Genes on different chromosomes that follow Mendel’s law of independent assortment are said to be __ genes.", accept: ["unlinked"], exp: "Unlinked genes assort independently because they reside on different chromosomes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "A physical exchange of chromosome segments between homologous chromosomes during meiosis I is called __ __.", accept: ["crossing over", "cross over"], exp: "Crossing over swaps segments of homologous chromosomes, generating recombinants." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Crossing over occurs during synapsis in __ __ of meiosis I, when homologous chromosomes pair tightly.", accept: ["prophase i", "prophase 1"], exp: "Homologous chromosomes synapse during prophase I, allowing crossing over to occur." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Chromatids that retain the original combinations of alleles present in the parents are called __ chromatids.", accept: ["parental"], exp: "Parental chromatids carry the starting combination of alleles before recombination." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Chromatids that carry new allele combinations after crossing over are called __ chromatids.", accept: ["recombinant", "recombinants"], exp: "Recombinant chromatids result from crossing over between homologous chromosomes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "The closer two genes are on a chromosome, the __ likely a crossover will occur between them.", accept: ["less"], exp: "Shorter distances between genes mean lower chances of recombination events." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Recombination frequency generally increases as the __ between two genes increases.", accept: ["distance"], exp: "Greater physical distance between genes leads to more opportunities for crossovers." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "A genetic map that orders genes along a chromosome based on recombination data is called a __ map.", accept: ["linkage", "genetic linkage", "linkage map", "genetic map"], exp: "Linkage maps show the order of genes inferred from recombination frequencies." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Alfred Sturtevant realized that he could use recombination frequencies to construct an ordered list of genetic loci, creating one of the first __ maps.", accept: ["linkage", "genetic linkage"], exp: "Sturtevant used recombination data from fly crosses to build early linkage maps." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Sturtevant defined a recombination frequency of 1% as one genetic map unit, also known as a __.", accept: ["centimorgan", "centi morgan", "cM", "centiMorgan"], exp: "One centiMorgan corresponds to a 1% recombination frequency between genes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "A single map unit (1 cM) corresponds to a __ percent recombination frequency.", accept: ["1", "1%"], exp: "By definition, 1 cM = 1% recombination between two loci." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Linkage maps indicate the __ distance and order of genes, not their exact physical positions in base pairs.", accept: ["relative"], exp: "Map units provide relative, not absolute, physical distances along chromosomes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "In a testcross, the fraction of recombinant offspring among all progeny directly estimates the __ frequency between two genes.", accept: ["recombination"], exp: "Recombination frequency is calculated as recombinants divided by total offspring." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Genes that are far apart on the same chromosome can have a recombination frequency near __%, making them behave as if unlinked.", accept: ["50", "50%"], exp: "At high distances, recombination frequency approaches 50%, mimicking independent assortment." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Genes that are physically on the same chromosome but show a recombination frequency near 50% are described as physically linked but genetically __.", accept: ["unlinked"], exp: "Frequent crossovers make such genes behave as if they are on different chromosomes." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "A diagram showing mutant phenotypes and their map distances (in cM) along a Drosophila chromosome is an example of a __ __ map.", accept: ["genetic linkage", "linkage"], exp: "These diagrams are linkage maps that place genes according to recombination data." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part2", q: "Using recombination data to infer gene order and spacing is a classic example of __ __ in genetics.", accept: ["scientific inquiry", "scientific investigation"], exp: "Sturtevant’s work shows how careful observation and hypothesis testing yield genetic maps." },
+
+  // --- W15 Lecture 17 Ch13 Slides Part 3 ---
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "A __ is an ordered visual display of an individual’s chromosomes arranged in homologous pairs.", accept: ["karyotype"], exp: "A karyotype shows all chromosomes, paired and ordered by size and shape." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "In humans, chromosome pairs 1–22 are called __, whereas the 23rd pair consists of the sex chromosomes.", accept: ["autosomes"], exp: "Autosomes are non-sex chromosomes; pair 23 is the sex chromosome pair." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "The shorter arm of a chromosome is called the __ arm, and the longer arm is called the q arm.", accept: ["p"], exp: "Chromosome arms are labeled p (short) and q (long)." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "Nondisjunction occurs when homologous chromosomes or __ __ fail to separate properly during meiosis.", accept: ["sister chromatids"], exp: "Failure of homologues or sister chromatids to separate leads to nondisjunction." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "A cell with the normal number of chromosomes for its species is described as __.", accept: ["euploid"], exp: "Euploid cells have the normal chromosome complement (for humans, 46)." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "An individual missing one copy of a particular chromosome (2n – 1) is said to have __ for that chromosome.", accept: ["monosomy"], exp: "Monosomy refers to having only one copy of a specific chromosome instead of two." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "An individual with three copies of a particular chromosome (2n + 1) is said to have __ for that chromosome.", accept: ["trisomy"], exp: "Trisomy describes a three-copy state for a specific chromosome." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "Trisomy 21 is the chromosomal basis of __ __, a common form of aneuploidy in humans.", accept: ["down syndrome", "down’s syndrome"], exp: "Having three copies of chromosome 21 causes Down syndrome." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "The incidence of trisomy 21 increases markedly with increasing __ age.", accept: ["maternal"], exp: "Older maternal age is associated with a higher risk of trisomy 21." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "A condition in which an organism has more than two complete sets of chromosomes is called __.", accept: ["polyploidy"], exp: "Polyploid organisms have 3n, 4n, or more complete chromosome sets." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "A triploid organism has a chromosome complement of __, whereas a tetraploid has __.", accept: ["3n and 4n", "3n, 4n"], exp: "Triploid cells are 3n and tetraploid cells are 4n." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "Early in development, one X chromosome in each female cell condenses into an inactive structure known as a __ __.", accept: ["barr body"], exp: "X inactivation forms a condensed Barr body in female cells." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "Random X inactivation in female cats leads to mosaic coat patterns, such as the classic __ coat.", accept: ["tortoiseshell", "calico"], exp: "Tortoiseshell or calico coat patterns reflect X-linked coat color mosaicism." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "A male with an XXY karyotype has __ syndrome and typically has small testes and reduced fertility.", accept: ["klinefelter", "klinefelter syndrome"], exp: "Klinefelter syndrome results from an extra X chromosome in males (XXY)." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "An X0 female with only one X chromosome has __ syndrome, the only known viable human monosomy.", accept: ["turner", "turner syndrome"], exp: "Turner syndrome females have a single X chromosome (X0)." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "Trisomy X females have the sex-chromosome complement __ and are usually healthy but at risk for learning difficulties.", accept: ["xxx"], exp: "XXX females are typically fertile and phenotypically normal, though learning issues may occur." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "A genetic disorder caused by deletion of part of chromosome 5, associated with a high-pitched cry in infants, is called __-__-__ syndrome.", accept: ["cri du chat", "cri-du-chat"], exp: "Cri-du-chat syndrome results from a deletion on the short arm of chromosome 5." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "A chromosome inversion that includes the centromere is called a __ inversion.", accept: ["pericentric"], exp: "Pericentric inversions span the centromere; paracentric inversions do not." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "A chromosome inversion that does not include the centromere is called a __ inversion.", accept: ["paracentric"], exp: "Paracentric inversions involve only one arm and exclude the centromere." },
+
+  { module: "Lec17 Modern Inheritance Ch13 Part3", q: "Exchange of segments between two nonhomologous chromosomes produces a __ __ mutation.", accept: ["reciprocal translocation", "reciprocal chromosome translocation", "translocation"], exp: "In a reciprocal translocation, nonhomologous chromosomes swap segments." }
+
   
 ]), []);
 
@@ -8834,6 +8958,1034 @@ function Exam4_MCQ_Lec15_Lec16_Quiz({ darkMode }) {
       }
     ]
   },
+
+    
+  {
+    key: "W15_Lec17_Ch13_Part1",
+    label: "W15 Lec17 Ch13 Part 1",
+    questions: [
+      {
+        q: "Which major technological development around 1900 allowed scientists to observe chromosome behavior during cell division?",
+        choices: [
+          "Polymerase chain reaction",
+          "Improved microscopy and staining techniques",
+          "Restriction enzyme discovery",
+          "Gel electrophoresis"
+        ],
+        a: 1,
+        exp: "Better microscopes and stains made chromosome behavior visible."
+      },
+      {
+        q: "Which statement accurately describes eukaryotic chromosomes?",
+        choices: [
+          "Single-stranded RNA structures",
+          "DNA–protein complexes located in the nucleus",
+          "Protein-only structures controlling metabolism",
+          "Small membrane-bound organelles"
+        ],
+        a: 1,
+        exp: "Chromosomes are made of DNA associated with proteins in the nucleus."
+      },
+      {
+        q: "Which idea is central to the chromosomal theory of inheritance?",
+        choices: [
+          "Gametes contain the same chromosome number as somatic cells",
+          "Homologous chromosomes segregate and assort independently during meiosis",
+          "All chromosomes arise spontaneously each generation",
+          "Only paternal chromosomes determine traits"
+        ],
+        a: 1,
+        exp: "Chromosome movements during meiosis explain Mendelian patterns."
+      },
+      {
+        q: "Why do gametes contain half the chromosome number of somatic cells?",
+        choices: [
+          "Gametes do not undergo DNA replication",
+          "Meiosis reduces chromosome number by separating homologous pairs",
+          "Gametes form without chromosomes",
+          "Gametes lose chromosomes during fertilization"
+        ],
+        a: 1,
+        exp: "Meiosis I separates homologous chromosomes, halving chromosome number."
+      },
+      {
+        q: "Which meiotic event provides the physical basis for Mendel’s law of segregation?",
+        choices: [
+          "Separation of sister chromatids during mitosis",
+          "DNA replication prior to meiosis",
+          "Separation of homologous chromosomes during meiosis I",
+          "Crossing over during prophase I"
+        ],
+        a: 2,
+        exp: "Homologous chromosomes carrying different alleles separate in meiosis I."
+      },
+      {
+        q: "Why does metaphase I orientation support independent assortment?",
+        choices: [
+          "Homologous pairs align randomly with respect to each other",
+          "Sister chromatids are genetically identical",
+          "No crossing over occurs at this stage",
+          "Chromosomes are attached end-to-end"
+        ],
+        a: 0,
+        exp: "Random orientation creates different allele combinations in gametes."
+      },
+      {
+        q: "Which statement about human gametes is correct?",
+        choices: [
+          "Eggs contain more chromosomes than sperm",
+          "Sperm contain more chromosomes than eggs",
+          "Eggs and sperm contain equal numbers of chromosomes",
+          "Gametes contain two full sets of chromosomes"
+        ],
+        a: 2,
+        exp: "Both gamete types are haploid with 23 chromosomes."
+      },
+      {
+        q: "Which pair of scientists provided early evidence linking chromosomes to inheritance?",
+        choices: [
+          "Watson and Crick",
+          "Boveri and Sutton",
+          "Darwin and Wallace",
+          "Franklin and Wilkins"
+        ],
+        a: 1,
+        exp: "Their cytology work supported the chromosomal theory of inheritance."
+      },
+      {
+        q: "Which researcher provided early cytological evidence for independent assortment?",
+        choices: [
+          "Thomas Hunt Morgan",
+          "Eleanor Carothers",
+          "Gregor Mendel",
+          "Hugo de Vries"
+        ],
+        a: 1,
+        exp: "Carothers observed random assortment of chromosome pairs in grasshoppers."
+      },
+      {
+        q: "Which geneticist demonstrated that specific traits are carried on specific chromosomes in fruit flies?",
+        choices: [
+          "Gregor Mendel",
+          "Thomas Hunt Morgan",
+          "Barbara McClintock",
+          "Erwin Chargaff"
+        ],
+        a: 1,
+        exp: "Morgan’s fruit fly crosses linked traits to the X chromosome."
+      },
+      {
+        q: "Which inheritance pattern was revealed through Morgan’s white-eye fruit fly mutant?",
+        choices: [
+          "Autosomal dominant inheritance",
+          "X-linked inheritance",
+          "Mitochondrial inheritance",
+          "Autosomal recessive inheritance"
+        ],
+        a: 1,
+        exp: "The white-eye trait segregated with the X chromosome."
+      },
+      {
+        q: "Which phrase best defines a karyotype?",
+        choices: [
+          "A cell’s full set of mRNA transcripts",
+          "A visual arrangement of chromosomes by size and morphology",
+          "A list of all proteins in a cell",
+          "A catalog of all alleles in a population"
+        ],
+        a: 1,
+        exp: "Karyotypes display chromosome pairs for analysis."
+      },
+      {
+        q: "Which feature is true of homologous chromosome pairs?",
+        choices: [
+          "They differ completely in gene content",
+          "They share size, centromere position, and banding patterns",
+          "They are present only in gametes",
+          "They always contain identical alleles"
+        ],
+        a: 1,
+        exp: "Homologs have the same loci but can carry different alleles."
+      },
+      {
+        q: "Which observation supported the idea that chromosomes are the physical basis of inheritance?",
+        choices: [
+          "Chromosomes form randomly during mitosis",
+          "Chromosome movements during meiosis parallel Mendel’s factors",
+          "Chromosomes are made entirely of proteins",
+          "Gametes contain identical chromosomes"
+        ],
+        a: 1,
+        exp: "Meiotic segregation mirrors Mendelian segregation of alleles."
+      },
+      {
+        q: "Mendel’s law of segregation is explained by:",
+        choices: [
+          "Separation of sister chromatids during mitosis",
+          "Random fertilization of gametes",
+          "Separation of homologous chromosomes during meiosis I",
+          "Crossing over events"
+        ],
+        a: 2,
+        exp: "Each gamete receives only one chromosome from each homologous pair."
+      },
+      {
+        q: "Mendel’s law of independent assortment is explained by:",
+        choices: [
+          "Independent replication of chromosomes",
+          "Random orientation of homologous pairs in metaphase I",
+          "Equal cytokinesis in telophase I",
+          "Absence of crossing over"
+        ],
+        a: 1,
+        exp: "Each pair’s orientation is independent of the others."
+      },
+      {
+        q: "Why do genes on the same chromosome sometimes NOT follow independent assortment?",
+        choices: [
+          "Because chromosomes replicate incorrectly",
+          "Because such genes may be physically linked",
+          "Because meiosis does not occur",
+          "Because gametes inherit both chromosomes from one parent"
+        ],
+        a: 1,
+        exp: "Linkage reduces independent assortment if the genes are close together."
+      },
+      {
+        q: "Which concept is supported by studies of sex-linked traits?",
+        choices: [
+          "Traits are inherited independently of chromosomes",
+          "Genes occupy specific positions on chromosomes",
+          "All traits are inherited maternally",
+          "Chromosomes do not influence heredity"
+        ],
+        a: 1,
+        exp: "Mapping sex-linked traits helped establish the idea of gene loci."
+      },
+      {
+        q: "Which statement best summarizes the chromosomal theory of inheritance?",
+        choices: [
+          "Chromosomes have no role in heredity",
+          "Genes reside on chromosomes, which undergo predictable movements in meiosis",
+          "Only maternal chromosomes influence traits",
+          "Inheritance is independent of gamete formation"
+        ],
+        a: 1,
+        exp: "Chromosomes are the physical carriers of genes."
+      },
+      {
+        q: "What major concept links Mendelian genetics to cell biology?",
+        choices: [
+          "Crossing over is unnecessary for inheritance",
+          "Chromosomal behavior during meiosis explains segregation and assortment",
+          "New chromosomes arise each generation",
+          "Chromosomes contain only structural genes"
+        ],
+        a: 1,
+        exp: "Meiosis provides the cytological basis for Mendel’s laws."
+      }
+    ]
+  },
+  {
+    key: "W15_Lec17_Ch13_Part2",
+    label: "W15 Lec17 Ch13 Part 2 (Linkage & Mapping)",
+    questions: [
+      {
+        q: "How are mutant alleles commonly represented in Drosophila genetics?",
+        choices: [
+          "By numbers only",
+          "By a superscript plus sign",
+          "By a lowercase abbreviation of the mutant phenotype",
+          "By chromosome number"
+        ],
+        a: 2,
+        exp: "Mutant alleles are often abbreviated by the mutant phenotype (e.g., vg for vestigial wings)."
+      },
+      {
+        q: "What does a superscript \"+\" represent in allele notation?",
+        choices: [
+          "A recessive allele",
+          "The wild-type allele",
+          "A lethal allele",
+          "A duplicated gene"
+        ],
+        a: 1,
+        exp: "The plus sign indicates the normal, wild-type version of the gene."
+      },
+      {
+        q: "Why can sex-linked traits violate Mendel’s principle of independent assortment?",
+        choices: [
+          "Sex chromosomes never separate",
+          "Genes on the same chromosome may be inherited together",
+          "Mutations prevent segregation",
+          "Sex chromosomes carry no genes"
+        ],
+        a: 1,
+        exp: "Linked genes on the same chromosome do not assort independently."
+      },
+      {
+        q: "Why do sons show X-linked recessive traits more frequently than daughters?",
+        choices: [
+          "Sons inherit two X chromosomes",
+          "Sons express the single X chromosome they receive from their mother",
+          "Only daughters undergo recombination",
+          "Sons inherit no paternal chromosomes"
+        ],
+        a: 1,
+        exp: "Males are hemizygous for X-linked genes."
+      },
+      {
+        q: "Which genes are considered unlinked?",
+        choices: [
+          "Genes on the same chromosome",
+          "Genes on different chromosomes or far apart on the same chromosome",
+          "Genes that mutate frequently",
+          "Genes expressed only in gametes"
+        ],
+        a: 1,
+        exp: "Such genes assort independently."
+      },
+      {
+        q: "What defines linked genes?",
+        choices: [
+          "Genes with identical sequences",
+          "Genes located close together on the same chromosome",
+          "Genes present only on autosomes",
+          "Genes involved in metabolism"
+        ],
+        a: 1,
+        exp: "Linked genes tend to be inherited together."
+      },
+      {
+        q: "Why do genes located far apart on the same chromosome exhibit higher recombination frequencies?",
+        choices: [
+          "They never cross over",
+          "More crossovers occur between them",
+          "They are inherited as a single unit",
+          "They replicate separately"
+        ],
+        a: 1,
+        exp: "Longer physical distance increases the chance of crossover."
+      },
+      {
+        q: "What is a recombinant chromosome?",
+        choices: [
+          "A chromosome identical to the parent",
+          "A chromosome containing new allele combinations due to crossing over",
+          "A chromosome missing a centromere",
+          "A chromosome produced only in mitosis"
+        ],
+        a: 1,
+        exp: "Crossing over creates recombinant chromosomes."
+      },
+      {
+        q: "What is the definition of a genetic (linkage) map?",
+        choices: [
+          "A map of nucleotide sequences",
+          "An ordered list of gene loci based on recombination frequencies",
+          "A physical chromosome map from microscopy",
+          "A metabolic pathway chart"
+        ],
+        a: 1,
+        exp: "Linkage maps use recombination data to infer gene order."
+      },
+      {
+        q: "What key insight allowed Sturtevant to construct the first linkage maps?",
+        choices: [
+          "Alleles randomly mutate",
+          "Recombination frequency reflects distance between genes",
+          "Chromosomes only recombine in males",
+          "Genes assort independently"
+        ],
+        a: 1,
+        exp: "He realized that recombination frequency could serve as a distance measure."
+      },
+      {
+        q: "A recombination frequency of 1% is defined as:",
+        choices: [
+          "1 kilobase",
+          "1 map unit (centiMorgan)",
+          "1 chromatid",
+          "1 mutation per gene"
+        ],
+        a: 1,
+        exp: "One map unit corresponds to 1% recombination."
+      },
+      {
+        q: "What do map units (centiMorgans) represent?",
+        choices: [
+          "Exact DNA sequence length",
+          "Relative genetic distance",
+          "Chromosome number",
+          "Gene expression level"
+        ],
+        a: 1,
+        exp: "They reflect relative spacing, not exact base pairs."
+      },
+      {
+        q: "Why do distant genes sometimes appear to assort independently even though they are on the same chromosome?",
+        choices: [
+          "They do not express proteins",
+          "Crossovers occur so frequently that parental and recombinant gametes are equally common",
+          "They mutate rapidly",
+          "They reside near the centromere"
+        ],
+        a: 1,
+        exp: "High recombination frequency makes them behave like unlinked genes."
+      },
+      {
+        q: "What does a recombination frequency near 50% indicate?",
+        choices: [
+          "The genes never recombine",
+          "The genes behave as though unlinked",
+          "The genes are very close together",
+          "The genes are located on the Y chromosome"
+        ],
+        a: 1,
+        exp: "At 50%, parental and recombinant types occur equally."
+      },
+      {
+        q: "How are genes arranged on a linkage map?",
+        choices: [
+          "By chromosome size",
+          "By recombination distances",
+          "Alphabetically",
+          "By expression levels"
+        ],
+        a: 1,
+        exp: "Order is based on recombination frequency between loci."
+      },
+      {
+        q: "Why does crossing over prevent linked genes from always being inherited together?",
+        choices: [
+          "It eliminates alleles",
+          "It exchanges chromosome segments between homologs",
+          "It prevents meiosis",
+          "It mutates DNA"
+        ],
+        a: 1,
+        exp: "Crossovers can separate alleles that started on the same chromosome."
+      },
+      {
+        q: "What happens to recombination frequency when genes are very close together?",
+        choices: [
+          "It increases sharply",
+          "It becomes very low",
+          "It reaches 50%",
+          "It becomes impossible to measure"
+        ],
+        a: 1,
+        exp: "Few crossovers occur between tightly linked genes."
+      },
+      {
+        q: "What can be inferred when offspring ratios show fewer recombinant phenotypes than parental phenotypes?",
+        choices: [
+          "Genes are unlinked",
+          "Genes are linked and relatively close together",
+          "Genes are lethal",
+          "Genes are mitochondrial"
+        ],
+        a: 1,
+        exp: "Excess parental types indicate linkage."
+      },
+      {
+        q: "Which principle forms the foundation of genetic mapping?",
+        choices: [
+          "Independent assortment of all genes",
+          "Recombination frequency reflects physical distance between genes",
+          "Chromosomes do not undergo crossing over",
+          "Recessive traits are rare"
+        ],
+        a: 1,
+        exp: "Mapping uses recombination as a proxy for distance."
+      },
+      {
+        q: "Which statement best summarizes linkage and mapping?",
+        choices: [
+          "All traits map to separate chromosomes",
+          "Linked genes recombine at a frequency proportional to their distance apart",
+          "Chromosomes never exchange material",
+          "Mapping requires DNA sequencing"
+        ],
+        a: 1,
+        exp: "Greater distance → higher recombination → larger map distance."
+      }
+    ]
+  },
+  {
+    key: "W15_Lec17_Ch13_Part3",
+    label: "W15 Lec17 Ch13 Part 3 (Chromosome Abnormalities)",
+    questions: [
+      {
+        q: "What event is described as nondisjunction?",
+        choices: [
+          "DNA fails to replicate before meiosis",
+          "Homologous chromosomes or sister chromatids fail to separate",
+          "The nuclear envelope reforms too early",
+          "The spindle forms without microtubules"
+        ],
+        a: 1,
+        exp: "Nondisjunction produces gametes with abnormal chromosome numbers."
+      },
+      {
+        q: "If nondisjunction occurs in meiosis II, what proportion of gametes are normal?",
+        choices: [
+          "0%",
+          "25%",
+          "50%",
+          "100%"
+        ],
+        a: 2,
+        exp: "Two gametes are normal and two are abnormal."
+      },
+      {
+        q: "Aneuploidy refers to:",
+        choices: [
+          "An entire extra chromosome set",
+          "An abnormal number of one or more chromosomes",
+          "A normal diploid chromosome number",
+          "Loss of all autosomes"
+        ],
+        a: 1,
+        exp: "Examples include trisomy and monosomy."
+      },
+      {
+        q: "Euploid cells are defined as those that:",
+        choices: [
+          "Have only one chromosome",
+          "Contain the normal complete sets of chromosomes",
+          "Lack a nucleus",
+          "Are always triploid"
+        ],
+        a: 1,
+        exp: "For humans, euploid somatic cells are 2n = 46."
+      },
+      {
+        q: "Monosomy occurs when:",
+        choices: [
+          "A chromosome is duplicated",
+          "One chromosome of a homologous pair is missing",
+          "All chromosomes appear in pairs",
+          "Chromosomes fail to condense"
+        ],
+        a: 1,
+        exp: "The cell has 2n − 1 chromosomes."
+      },
+      {
+        q: "Trisomy occurs when:",
+        choices: [
+          "A chromosome is deleted",
+          "One chromosome appears in three copies",
+          "Chromosomes appear unpaired",
+          "Two chromosome sets are missing"
+        ],
+        a: 1,
+        exp: "The cell has 2n + 1 chromosomes."
+      },
+      {
+        q: "The frequency of Down syndrome strongly correlates with:",
+        choices: [
+          "Number of siblings",
+          "Maternal age",
+          "Paternal diet",
+          "Blood type"
+        ],
+        a: 1,
+        exp: "Risk increases markedly with increasing maternal age."
+      },
+      {
+        q: "Polyploidy is defined as:",
+        choices: [
+          "Missing chromosomes during meiosis",
+          "More than two complete sets of chromosomes",
+          "A single chromosome replication error",
+          "Loss of the Y chromosome"
+        ],
+        a: 1,
+        exp: "Examples include triploid (3n) and tetraploid (4n) cells."
+      },
+      {
+        q: "Why are many polyploid plants larger or more vigorous?",
+        choices: [
+          "They have fewer alleles",
+          "Extra chromosome sets increase gene dosage",
+          "Their chromosomes fail to segregate",
+          "They produce no gametes"
+        ],
+        a: 1,
+        exp: "Increased gene dosage can enhance growth traits."
+      },
+      {
+        q: "Triploid and tetraploid organisms differ from diploids in that they:",
+        choices: [
+          "Have three or four copies of a single chromosome",
+          "Have three or four complete sets of chromosomes",
+          "Lack sex chromosomes",
+          "Cannot undergo mitosis"
+        ],
+        a: 1,
+        exp: "Triploid = 3n; tetraploid = 4n."
+      },
+      {
+        q: "Which structure forms due to X-chromosome inactivation in female mammals?",
+        choices: [
+          "Kinetochore",
+          "Barr body",
+          "Centrosome",
+          "Spliceosome"
+        ],
+        a: 1,
+        exp: "The inactive X chromosome condenses into a Barr body."
+      },
+      {
+        q: "Which statement accurately describes X-chromosome inactivation?",
+        choices: [
+          "The maternal X is always inactivated",
+          "Inactivation is random and then inherited by daughter cells",
+          "Both X chromosomes remain fully active",
+          "The paternal X is always inactivated"
+        ],
+        a: 1,
+        exp: "Once one X is inactivated, that choice is maintained in the lineage."
+      },
+      {
+        q: "Which karyotype corresponds to Klinefelter syndrome?",
+        choices: [
+          "XO",
+          "XXY",
+          "XYY",
+          "XXX"
+        ],
+        a: 1,
+        exp: "Klinefelter males typically have an XXY karyotype."
+      },
+      {
+        q: "Individuals with an XYY karyotype are typically:",
+        choices: [
+          "Severely developmentally impaired",
+          "Missing the Y chromosome",
+          "Phenotypically male with generally normal development",
+          "Always infertile"
+        ],
+        a: 2,
+        exp: "Most XYY males are fertile and healthy."
+      },
+      {
+        q: "Trisomy X (XXX) in females usually results in:",
+        choices: [
+          "Nonviability",
+          "Severe organ defects",
+          "A generally normal phenotype with increased risk of learning difficulties",
+          "Male characteristics"
+        ],
+        a: 2,
+        exp: "Many XXX females are undiagnosed."
+      },
+      {
+        q: "Turner syndrome is associated with which chromosome complement?",
+        choices: [
+          "XXY",
+          "XO",
+          "XYY",
+          "XXX"
+        ],
+        a: 1,
+        exp: "Turner syndrome involves monosomy X."
+      },
+      {
+        q: "The tortoiseshell pattern in female cats is caused by:",
+        choices: [
+          "Autosomal recessive inheritance",
+          "Random X-chromosome inactivation",
+          "Mitochondrial mutation",
+          "Y-linked inheritance"
+        ],
+        a: 1,
+        exp: "Different patches express different X-linked coat-color alleles."
+      },
+      {
+        q: "Cri-du-chat syndrome results from:",
+        choices: [
+          "Trisomy 21",
+          "Deletion on chromosome 5",
+          "Triploidy",
+          "Translocation between chromosomes 5 and 21"
+        ],
+        a: 1,
+        exp: "A partial deletion of chromosome 5 causes Cri-du-chat."
+      },
+      {
+        q: "Inversions that include the centromere are called __; inversions excluding the centromere are __.",
+        choices: [
+          "Paracentric; pericentric",
+          "Pericentric; paracentric",
+          "Reciprocal; Robertsonian",
+          "Simple; complex"
+        ],
+        a: 1,
+        exp: "Pericentric = includes centromere; paracentric = does not."
+      },
+      {
+        q: "A reciprocal translocation involves:",
+        choices: [
+          "Exchange between sister chromatids",
+          "Exchange of chromosome segments between nonhomologous chromosomes",
+          "Loss of an entire chromosome",
+          "Duplication of the centromere"
+        ],
+        a: 1,
+        exp: "Two nonhomologous chromosomes swap segments."
+      }
+    ]
+  },
+
+{
+  key: "Lec15_Lec16_Lec17_Review",
+  label: "Lec15–Lec16–Lec17 Review",
+  questions: [
+
+    // --- 54 REWRITTEN MCQs MERGED INTO A SINGLE MODULE ---
+
+    {
+      q: "During Mendel's crosses, pollen was transferred from which flower structure to the stigma?",
+      choices: ["anther", "ovule", "style", "sepal"],
+      a: 0,
+      exp: "The anther produces pollen used in fertilization."
+    },
+    {
+      q: "Which feature was one of the original traits Mendel tracked in pea plants?",
+      choices: ["flower color", "leaf venation", "pod dryness", "stem thickness"],
+      a: 0,
+      exp: "Flower color was one of Mendel’s seven key traits."
+    },
+    {
+      q: "In a monohybrid cross between true-breeding plants showing dominant and recessive traits, the F₁ generation will:",
+      choices: ["show only the dominant phenotype", "show a 1:1 ratio", "show the recessive phenotype", "show codominance"],
+      a: 0,
+      exp: "The F₁ expresses the dominant trait."
+    },
+    {
+      q: "If you cross a heterozygous pea plant with a plant homozygous recessive for the same trait, what phenotype ratio is expected?",
+      choices: ["1:1", "3:1", "2:1", "4:0"],
+      a: 0,
+      exp: "A test cross of Aa × aa produces 50% dominant, 50% recessive."
+    },
+    {
+      q: "Which term describes the physical traits produced by an organism’s genes?",
+      choices: ["phenotype", "allele", "genotype", "locus"],
+      a: 0,
+      exp: "Phenotype is the observable form of a trait."
+    },
+    {
+      q: "A recessive trait is expressed only when an individual is:",
+      choices: ["aa", "AA", "Aa", "A-"],
+      a: 0,
+      exp: "Two recessive alleles are required."
+    },
+    {
+      q: "In a cross between carriers of a recessive trait, which genotype ratio is expected?",
+      choices: ["1:2:1", "3:1", "1:1", "4:0"],
+      a: 0,
+      exp: "Aa × Aa produces 1 AA : 2 Aa : 1 aa."
+    },
+    {
+      q: "When two heterozygotes are crossed, the probability of producing an offspring with the recessive phenotype is:",
+      choices: ["25%", "50%", "75%", "0%"],
+      a: 0,
+      exp: "Only aa expresses the recessive trait."
+    },
+    {
+      q: "In a dihybrid cross with independent assortment, the expected phenotype ratio is:",
+      choices: ["9:3:3:1", "1:1:1:1", "3:1", "2:1"],
+      a: 0,
+      exp: "Typical of AaBb × AaBb."
+    },
+    {
+      q: "Which tools are most commonly used to predict offspring ratios in genetic crosses?",
+      choices: ["Punnett squares", "Pedigree charts", "Karyotypes", "BLAST searches"],
+      a: 0,
+      exp: "Punnett squares map allele combinations."
+    },
+    {
+      q: "When two genes assort independently, it means they:",
+      choices: ["are on different chromosomes", "are very close together", "mutate rapidly", "are both recessive"],
+      a: 0,
+      exp: "Genes on different chromosomes assort independently."
+    },
+    {
+      q: "If both parents are heterozygous for a dominant allele, the chance of producing a homozygous dominant offspring is:",
+      choices: ["25%", "50%", "75%", "100%"],
+      a: 0,
+      exp: "From Aa × Aa, 1/4 = AA."
+    },
+    {
+      q: "Which blood group illustrates codominance in humans?",
+      choices: ["AB", "O", "A", "B"],
+      a: 0,
+      exp: "AB expresses both A and B antigens equally."
+    },
+    {
+      q: "A mating between individuals heterozygous for a recessive disorder yields what probability of an affected child?",
+      choices: ["25%", "50%", "75%", "0%"],
+      a: 0,
+      exp: "Only aa expresses the disorder."
+    },
+    {
+      q: "Which condition must be true for a gene to exhibit independent assortment?",
+      choices: ["located on different chromosomes", "located next to the centromere", "found only in gametes", "expressed only in adults"],
+      a: 0,
+      exp: "Genes on separate chromosomes assort randomly."
+    },
+    {
+      q: "In a dihybrid testcross, a 1:1:1:1 ratio suggests:",
+      choices: ["no linkage", "complete linkage", "incomplete dominance", "mutational bias"],
+      a: 0,
+      exp: "Independent assortment produces equal recombinant and parental types."
+    },
+    {
+      q: "Which scenario best illustrates Mendel’s law of segregation?",
+      choices: ["Gametes carry one allele per gene", "Genes assort independently", "Alleles mutate predictably", "Phenotypes skip generations"],
+      a: 0,
+      exp: "Each gamete receives only one allele."
+    },
+    {
+      q: "A man with type AB blood and a woman with type O blood could produce children with which blood types?",
+      choices: ["A or B", "AB only", "O only", "all four types"],
+      a: 0,
+      exp: "Possible gametes are A/B from father and O from mother."
+    },
+
+    // Probability, linkage, sex-linked traits (10)
+
+    {
+      q: "A sex-linked recessive condition appears most often in:",
+      choices: ["males", "females", "both equally", "children of older parents"],
+      a: 0,
+      exp: "Males are hemizygous for X-linked alleles."
+    },
+    {
+      q: "The site of physical crossover between homologous chromosomes is called a:",
+      choices: ["chiasma", "centromere", "telomere", "nucleosome"],
+      a: 0,
+      exp: "Chiasmata indicate where crossing over occurred."
+    },
+    {
+      q: "Which recombination frequency corresponds to genes that assort independently?",
+      choices: ["50%", "10%", "1%", "0%"],
+      a: 0,
+      exp: "Distant genes behave as unlinked with 50% recombination."
+    },
+    {
+      q: "A 0% recombination rate between two genes suggests:",
+      choices: ["very tight linkage", "independent assortment", "codominance", "mutation"],
+      a: 0,
+      exp: "No recombinants indicate complete linkage."
+    },
+    {
+      q: "Which mapping distance represents strong linkage?",
+      choices: ["5 cM", "50 cM", "30 cM", "100 cM"],
+      a: 0,
+      exp: "Smaller map units indicate closer genes."
+    },
+    {
+      q: "Which chromosomal description refers to band 12p13?",
+      choices: ["chromosome 12, short arm, region 1 band 3", "chromosome 1, long arm", "chromosome 3, short arm", "chromosome 13, long arm"],
+      a: 0,
+      exp: "p = short arm; band numbers follow cytogenetic notation."
+    },
+    {
+      q: "Genes far apart on the same chromosome may behave as unlinked because:",
+      choices: ["multiple crossovers occur", "they mutate often", "they are inactive", "they duplicate rapidly"],
+      a: 0,
+      exp: "Frequent crossing over yields recombination ≈ 50%."
+    },
+    {
+      q: "A testcross producing mostly parental offspring indicates:",
+      choices: ["linkage", "independence", "dominance", "incomplete dominance"],
+      a: 0,
+      exp: "Parental excess shows linked genes."
+    },
+    {
+      q: "A recombination value of 1% corresponds to:",
+      choices: ["1 cM", "10 bp", "1 Mb", "0.1 cM"],
+      a: 0,
+      exp: "One map unit equals 1% recombination."
+    },
+    {
+      q: "Which statement describes Sturtevant’s mapping insight?",
+      choices: ["Recombination frequency reflects gene distance", "Genes mutate at fixed rates", "DNA is double-stranded", "Dominant traits always mask recessive traits"],
+      a: 0,
+      exp: "He recognized recombination as a measure of gene spacing."
+    },
+
+    // Gene regulation (14)
+
+    {
+      q: "Gene expression in eukaryotes is most commonly regulated at which level?",
+      choices: ["transcription", "translation", "DNA replication", "mitosis"],
+      a: 0,
+      exp: "Transcriptional control is the primary regulatory point."
+    },
+    {
+      q: "Operons are characteristic of which organisms?",
+      choices: ["prokaryotes", "plants", "fungi", "mammals"],
+      a: 0,
+      exp: "Operons are common in bacteria."
+    },
+    {
+      q: "A repressor binds to which operon region to block transcription?",
+      choices: ["operator", "promoter", "terminator", "enhancer"],
+      a: 0,
+      exp: "The operator is the repressor binding site."
+    },
+    {
+      q: "The lac operon is normally:",
+      choices: ["off unless lactose is present", "on unless glucose is present", "always on", "always off"],
+      a: 0,
+      exp: "Lac is inducible; lactose turns it on."
+    },
+    {
+      q: "The trp operon is normally:",
+      choices: ["on unless tryptophan is abundant", "off unless tryptophan is added", "always on", "never active"],
+      a: 0,
+      exp: "Trp is repressible and active when tryptophan is low."
+    },
+    {
+      q: "DNA methylation generally results in:",
+      choices: ["gene silencing", "enhanced transcription", "chromosome duplication", "gene activation"],
+      a: 0,
+      exp: "Methylation tightens chromatin."
+    },
+    {
+      q: "Histone acetylation typically produces:",
+      choices: ["greater transcription", "silencing", "DNA degradation", "polysome formation"],
+      a: 0,
+      exp: "Acetylation loosens chromatin."
+    },
+    {
+      q: "Which modification directly alters chromatin accessibility?",
+      choices: ["histone acetylation", "codon usage", "amino acid substitution", "alternative splicing"],
+      a: 0,
+      exp: "Acetylation increases access to DNA."
+    },
+    {
+      q: "Alternative splicing allows:",
+      choices: ["multiple proteins from one gene", "stronger repression", "DNA methylation", "gene duplication"],
+      a: 0,
+      exp: "Splicing variants expand protein diversity."
+    },
+    {
+      q: "In eukaryotes, transcription requires which protein to bind the promoter first?",
+      choices: ["transcription factor", "DNA polymerase", "ribosome", "helicase"],
+      a: 0,
+      exp: "Transcription factors recruit RNA polymerase."
+    },
+    {
+      q: "Short RNA molecules such as miRNAs primarily function to:",
+      choices: ["suppress gene expression", "enhance DNA replication", "promote translation", "increase chromosome condensation"],
+      a: 0,
+      exp: "miRNAs direct RISC complexes to degrade mRNA."
+    },
+    {
+      q: "RNA polymerase can initiate transcription only after:",
+      choices: ["transcription factors assemble at the promoter", "ribosomes bind", "the gene is translated", "DNA replication occurs"],
+      a: 0,
+      exp: "A transcription initiation complex is required."
+    },
+    {
+      q: "Targeted cancer therapies are most effective when the tumor cells:",
+      choices: ["overexpress the target receptor", "lack the receptor entirely", "are post-mitotic", "have no splicing errors"],
+      a: 0,
+      exp: "Therapies depend on binding overexpressed receptors."
+    },
+    {
+      q: "Which feature of genes explains why one gene can generate multiple protein isoforms?",
+      choices: ["alternative splicing", "centromere location", "codominance", "dominance"],
+      a: 0,
+      exp: "Alternative splicing produces different mRNAs."
+    },
+
+    // Chromosomes, nondisjunction, mapping (12)
+
+    {
+      q: "Which statement about meiosis II nondisjunction is correct?",
+      choices: ["half of the gametes are normal", "all gametes are abnormal", "three gametes are normal", "none are normal"],
+      a: 0,
+      exp: "Two gametes are normal; two are abnormal."
+    },
+    {
+      q: "Trisomy X females are typically:",
+      choices: ["fertile with mild symptoms", "nonviable", "male", "unable to undergo meiosis"],
+      a: 0,
+      exp: "Most XXX individuals are phenotypically normal."
+    },
+    {
+      q: "Polyploid plants often show increased vigor because:",
+      choices: ["extra chromosome sets amplify gene expression", "they make fewer proteins", "they have no introns", "their DNA does not replicate"],
+      a: 0,
+      exp: "Polyploidy raises gene dosage."
+    },
+    {
+      q: "Inversions that include the centromere are called:",
+      choices: ["pericentric", "paracentric", "reciprocal", "nonreciprocal"],
+      a: 0,
+      exp: "Pericentric = covering the centromere."
+    },
+    {
+      q: "X-chromosome inactivation results in the formation of a:",
+      choices: ["Barr body", "centrosome", "kinetochore", "Okazaki fragment"],
+      a: 0,
+      exp: "Inactive X condenses into a Barr body."
+    },
+    {
+      q: "Turner syndrome results from which karyotype?",
+      choices: ["XO", "XXY", "XYY", "XXX"],
+      a: 0,
+      exp: "Turner syndrome is monosomy X."
+    },
+    {
+      q: "An individual with the karyotype XXY is classified as having:",
+      choices: ["Klinefelter syndrome", "Turner syndrome", "Cri-du-chat", "Triplo-X"],
+      a: 0,
+      exp: "XXY defines Klinefelter syndrome."
+    },
+    {
+      q: "XYY individuals are generally:",
+      choices: ["phenotypically male and typically healthy", "female", "nonviable", "prone to nondisjunction"],
+      a: 0,
+      exp: "Most XYY individuals are fertile and normal."
+    },
+    {
+      q: "Cri-du-chat syndrome is caused by:",
+      choices: ["a deletion on chromosome 5", "trisomy 21", "a translocation of chromosome 3", "a duplication of X"],
+      a: 0,
+      exp: "It results from a 5p deletion."
+    },
+    {
+      q: "Which event would prevent proper chromosome pairing during meiosis in individuals with inversions?",
+      choices: ["failure to form an inversion loop", "absence of telomeres", "excess crossing over", "loss of spindle fibers"],
+      a: 0,
+      exp: "Inversion loops allow homologs to align."
+    },
+    {
+      q: "A triploid organism contains:",
+      choices: ["three full sets of chromosomes", "three copies of one chromosome only", "missing chromosomes", "only one sex chromosome"],
+      a: 0,
+      exp: "Triploid = 3n chromosome complement."
+    },
+    {
+      q: "Which polyploid condition is most common in crops like strawberries?",
+      choices: ["tetraploidy", "haploidy", "monosomy", "trisomy"],
+      a: 0,
+      exp: "Many crop plants are artificially tetraploid."
+    }
+
+  ]
+},
+
+
+
+
 
 
 
