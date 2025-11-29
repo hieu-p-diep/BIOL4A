@@ -5327,6 +5327,215 @@ function Exam4_FITB_Lab21_Lab22_Quiz({ darkMode }) {  const QUESTIONS = useMemo(
   { module: "Lec17 Modern Inheritance Ch13 Part3", q: "Exchange of segments between two nonhomologous chromosomes produces a __ __ mutation.", accept: ["reciprocal translocation", "reciprocal chromosome translocation", "translocation"], exp: "In a reciprocal translocation, nonhomologous chromosomes swap segments." }
 
 
+// --- W15 Lecture 18 Ch9 Cell Communication Part 1 – Exam4-style (30) ---
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "In paracrine signaling, molecules move by diffusion through the __ __ to reach nearby target cells.",
+  accept: ["extracellular matrix", "ecm"],
+  exp: "Paracrine signals diffuse through the extracellular matrix to act locally on neighboring cells."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Paracrine signaling typically acts on cells that are __ to the signaling cell.",
+  accept: ["nearby", "close", "adjacent", "neighboring"],
+  exp: "Paracrine signals are local and affect cells in the immediate neighborhood of the signaling cell."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Synaptic signaling between neurons is a specialized example of __ signaling.",
+  accept: ["paracrine"],
+  exp: "Neurotransmitters diffuse across a small synaptic gap, making synaptic signaling a type of paracrine signaling."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "At chemical synapses, neurotransmitters are released from the __ cell and detected by receptors on the postsynaptic cell.",
+  accept: ["presynaptic"],
+  exp: "The presynaptic cell releases neurotransmitter into the synaptic cleft to signal the postsynaptic cell."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "The tiny space between a presynaptic and postsynaptic neuron is called the __ gap (or synaptic cleft).",
+  accept: ["synaptic"],
+  exp: "The synaptic gap is very small, allowing rapid diffusion of neurotransmitters."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "In the synaptic cleft, __ break down some neurotransmitters to help terminate the signal.",
+  accept: ["enzymes", "degrading enzymes"],
+  exp: "Enzymes in the cleft chemically degrade neurotransmitters, stopping the signal."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Endocrine signaling involves signals that travel from __ cells to distant target cells.",
+  accept: ["distant"],
+  exp: "Endocrine signals are produced in one part of the body and act on cells far away."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "In endocrine signaling, ligands are carried through the body by the __.",
+  accept: ["bloodstream", "blood"],
+  exp: "Hormones secreted into the bloodstream can reach distant target tissues."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Endocrine signals typically produce a __ response with a long-lasting effect.",
+  accept: ["slower", "slow"],
+  exp: "Because hormones travel through the bloodstream, endocrine responses are slower but often persist longer."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Signaling molecules that function in endocrine signaling and often have long-lasting effects are called __.",
+  accept: ["hormones"],
+  exp: "Hormones are endocrine ligands that regulate many physiological processes at distant sites."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "In autocrine signaling, the signaling cell and the __ cell can be the same or very similar.",
+  accept: ["target"],
+  exp: "Autocrine cells release ligands that bind to receptors on themselves or on nearby similar cells."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Autocrine signaling often plays a role in __ __ signaling, where a cell triggers its own death.",
+  accept: ["cell death", "apoptotic", "apoptosis"],
+  exp: "During apoptosis, cells may release signals that reinforce or coordinate their own death program."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Direct signaling across __ __ allows small signaling molecules to move directly between neighboring cells.",
+  accept: ["gap junctions", "gap junction"],
+  exp: "Gap junctions form channels between adjacent cells so small molecules can pass directly from cytoplasm to cytoplasm."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Gap junctions are composed of protein channels that connect the __ of adjacent cells.",
+  accept: ["cytoplasm", "cytosol"],
+  exp: "Gap junction channels link the cytoplasm of neighboring cells, allowing ions and small molecules to flow between them."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Direct signaling through gap junctions relies on __ mediators that move between cells.",
+  accept: ["intracellular", "small intracellular"],
+  exp: "Intracellular mediators such as ions and small metabolites can be shared through gap junctions."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Paracrine, endocrine, autocrine, and direct signaling across gap junctions are four major categories of chemical __.",
+  accept: ["signaling", "cell signaling"],
+  exp: "These four categories describe different ways cells send and receive signals."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "In paracrine signaling, signals diffuse over a __ distance compared with endocrine signaling.",
+  accept: ["shorter", "short"],
+  exp: "Paracrine signals act locally, so they travel only short distances through the extracellular matrix."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Compared with paracrine signaling, endocrine signaling generally has a __ onset but a more prolonged effect.",
+  accept: ["slower"],
+  exp: "Endocrine signals take longer to arrive but their effects often persist longer than local paracrine signals."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "In autocrine signaling, the cell must express both the signal and the appropriate __ to detect that signal.",
+  accept: ["receptor", "receptors"],
+  exp: "Autocrine cells produce ligands and also carry receptors that recognize those ligands."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "A cell’s response to a signal may involve changes in __ expression, turning specific genes on or off.",
+  accept: ["gene"],
+  exp: "Cell signaling can activate or repress transcription, altering gene expression patterns."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Cell signaling can increase or decrease cellular __, altering the rate of energy use and biochemical reactions.",
+  accept: ["metabolism", "metabolic rate"],
+  exp: "One outcome of signaling pathways is a change in metabolism."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "In addition to metabolism, signals can trigger cell __ or reproduction, leading to tissue growth.",
+  accept: ["growth", "division", "proliferation"],
+  exp: "Growth factors and other signals can stimulate cells to grow and divide."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Signals that activate programmed cell death pathways lead to __, a controlled form of cell death.",
+  accept: ["apoptosis"],
+  exp: "Apoptosis is an orderly process of cell suicide often controlled by signaling pathways."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "In nervous tissue, the rapid diffusion of neurotransmitters across the synaptic gap allows for very __ communication between cells.",
+  accept: ["fast", "rapid"],
+  exp: "Because the synaptic gap is so small, neurotransmitter diffusion and signaling are extremely rapid."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "One advantage of paracrine signaling is that it allows finely tuned, local responses without affecting __ cells throughout the body.",
+  accept: ["distant", "far-away", "remote"],
+  exp: "Paracrine signaling limits the signal to neighboring cells rather than the whole organism."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Endocrine glands such as the pituitary or thyroid release hormones directly into the __ rather than into ducts.",
+  accept: ["bloodstream", "blood"],
+  exp: "Endocrine glands are ductless glands that secrete hormones into the blood."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Because gap junctions directly connect the cytoplasm of adjacent cells, signaling through them does not require diffusion through the __ __.",
+  accept: ["extracellular matrix", "ecm"],
+  exp: "Gap junction signaling bypasses the extracellular matrix by using direct cytoplasmic channels."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "A single cell may both send and receive signals, allowing complex feedback loops and __ regulation of its own behavior.",
+  accept: ["self", "autocrine"],
+  exp: "Autocrine feedback allows cells to adjust their behavior based on signals they themselves produce."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part1",
+  q: "Overall, the ultimate effect of cell signaling is a specific cellular __, such as a change in gene expression, metabolism, growth, or death.",
+  accept: ["response"],
+  exp: "Regardless of the pathway, signaling leads to a particular, regulated cellular response."
+},
+
+
+
+
+
+  
   
   
   
