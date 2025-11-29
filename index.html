@@ -5532,6 +5532,210 @@ function Exam4_FITB_Lab21_Lab22_Quiz({ darkMode }) {  const QUESTIONS = useMemo(
 },
 
 
+  // --- W15 Lecture 18 Ch9 Cell Communication Part 2 – Exam4-style (30) ---
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Hydrophilic signaling molecules typically bind to __ receptors on the outside of the cell.",
+  accept: ["membrane", "cell-surface", "cell surface"],
+  exp: "Because they cannot easily cross the lipid bilayer, hydrophilic ligands bind to membrane (cell-surface) receptors."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Binding of hydrophilic ligands to cell-surface receptors usually produces a __ response with short-term effects.",
+  accept: ["faster", "fast"],
+  exp: "Cell-surface signaling tends to be fast but transient because it relies on existing proteins and cascades."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Signaling molecules that act as chemical signals and travel to target cells to coordinate responses are called __.",
+  accept: ["ligands"],
+  exp: "Ligands are signaling molecules that bind specific receptors and trigger cellular responses."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Ligands can range in size from small __ to small ions such as Ca2+.",
+  accept: ["proteins", "polypeptides", "peptides"],
+  exp: "Ligands include diverse molecules, from small proteins and peptides to ions like calcium."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Three major types of cell-surface receptors are ion channel–linked, __-protein–linked, and enzyme-linked receptors.",
+  accept: ["g", "g-protein", "g protein"],
+  exp: "Cell-surface receptors are commonly grouped into ion channel–linked, G-protein–linked, and enzyme-linked classes."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Gated ion channels form a __ through the plasma membrane that opens when a signaling molecule binds.",
+  accept: ["pore", "channel"],
+  exp: "Ligand binding opens a pore in gated ion channels, allowing ions to cross the membrane."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "When an ion channel–linked receptor opens, ions are allowed to flow __ or __ of the cell.",
+  accept: ["into", "out", "into or out"],
+  exp: "Open ion channels permit ions to move down their electrochemical gradients into or out of the cell."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "In G-protein–linked receptors, ligand binding causes the G protein to exchange GDP for __.",
+  accept: ["gtp"],
+  exp: "Activation of a G protein involves replacing bound GDP with GTP on the α subunit."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Activated G proteins interact with an effector enzyme in the membrane, such as __ cyclase or phospholipase C.",
+  accept: ["adenylyl", "adenylate"],
+  exp: "Adenylyl cyclase is a classic effector enzyme activated by certain G proteins to make cAMP."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Enzyme-linked receptors often function as __ kinases, phosphorylating specific amino acids on target proteins.",
+  accept: ["tyrosine"],
+  exp: "Many enzyme-linked receptors, including growth factor receptors, are receptor tyrosine kinases."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Binding of a signaling molecule to a receptor tyrosine kinase causes the receptor to __, forming a stable complex of two receptors.",
+  accept: ["dimerize", "dimerization"],
+  exp: "Ligand binding induces dimerization of receptor tyrosine kinases, bringing their kinase domains together."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "After dimerization, tyrosine residues on the intracellular domain of a receptor tyrosine kinase become __, triggering downstream responses.",
+  accept: ["autophosphorylated", "phosphorylated"],
+  exp: "The receptors phosphorylate their own tyrosines (autophosphorylation), creating docking sites for signaling proteins."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "A __ removes phosphates from phosphotyrosine residues on receptor tyrosine kinases, helping terminate the signal.",
+  accept: ["phosphatase"],
+  exp: "Phosphatases reverse phosphorylation and are important for turning off tyrosine-kinase signaling."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "The process in which a ligand-bound receptor transmits a signal across the membrane and into the cytoplasm is called signal __.",
+  accept: ["transduction"],
+  exp: "Signal transduction refers to converting an extracellular signal into an intracellular response via a cascade."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "A __ __ is a chain of events—including second messengers, enzymes, and activated proteins—that follows ligand binding to a receptor.",
+  accept: ["signaling pathway", "signal transduction pathway"],
+  exp: "Signaling pathways connect receptor activation to specific cellular responses."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "When signals from two or more different cell-surface receptors merge to activate the same response, this is called signal __.",
+  accept: ["integration"],
+  exp: "Signal integration allows cells to coordinate multiple inputs into a unified response."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Hydrophobic signaling molecules typically cross the plasma membrane and bind to __ receptors inside the cell.",
+  accept: ["internal", "intracellular"],
+  exp: "Small hydrophobic ligands diffuse through the bilayer and bind intracellular (internal) receptors."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Many intracellular receptors function as __ factors that interact with DNA and regulate gene expression.",
+  accept: ["transcription"],
+  exp: "Once activated, intracellular receptors often bind DNA and alter transcription of target genes."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Signaling by internal receptors is usually __ to start but produces long-term effects.",
+  accept: ["slower", "slow"],
+  exp: "Because gene expression must be altered, intracellular receptor signaling is slower but sustained."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Steroid hormones have chemical structures similar to their precursor, __.",
+  accept: ["cholesterol"],
+  exp: "Cholesterol is the precursor of many steroid hormones that signal via internal receptors."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Small hydrophobic ligands such as steroid hormones can diffuse directly across the __ __ into the cell.",
+  accept: ["plasma membrane", "cell membrane"],
+  exp: "Their nonpolar nature allows steroid hormones to pass through the lipid bilayer."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Nitric oxide (NO) is a gaseous ligand that crosses membranes and causes __ of blood vessels.",
+  accept: ["dilation", "vasodilation"],
+  exp: "NO diffuses into smooth muscle cells and induces vasodilation, increasing blood flow."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "In heart disease therapy, drugs like Viagra work in NO signaling pathways by prolonging blood vessel __.",
+  accept: ["dilation", "vasodilation"],
+  exp: "These drugs enhance NO signaling to maintain vasodilation in certain vascular beds."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Phosphorylation involves adding a __ group (PO4³⁻) to specific amino acid residues such as serine, threonine, or tyrosine.",
+  accept: ["phosphate"],
+  exp: "Protein phosphorylation attaches a phosphate group to particular amino acids, altering protein activity."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "An enzyme that catalyzes the transfer of a phosphate group from ATP to a protein is called a __.",
+  accept: ["kinase"],
+  exp: "Kinases are central to signaling pathways, activating or inactivating proteins via phosphorylation."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Small molecules like cyclic AMP that propagate a signal after receptor binding are known as __ messengers.",
+  accept: ["second"],
+  exp: "Second messengers relay and amplify signals from receptors to intracellular targets."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "The enzyme __ cyclase converts ATP into cAMP, a common second messenger.",
+  accept: ["adenylyl", "adenylate"],
+  exp: "Adenylyl cyclase is activated by some G proteins and synthesizes cAMP from ATP."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "The enzyme phosphodiesterase terminates cAMP signaling by converting cAMP into __.",
+  accept: ["amp"],
+  exp: "Phosphodiesterases hydrolyze cAMP to AMP, shutting down this second-messenger signal."
+},
+
+{ 
+  module: "Lec18 Cell Communication Ch9 Part2",
+  q: "Phospholipase C cleaves the membrane phospholipid PIP2 into two second messengers, IP3 and __.",
+  accept: ["dag", "diacylglycerol"],
+  exp: "Phospholipase C generates IP3 and DAG, which together propagate the signal inside the cell."
+}
+
 
 
 
